@@ -1,3 +1,3 @@
-php.log
+**/php.log
 .env
 /vendor/
