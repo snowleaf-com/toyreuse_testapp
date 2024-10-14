@@ -402,18 +402,18 @@ if (!empty($_POST['submit'])) {
 
 
             <div class="imgDrop">
-                <div>商品画像（３枚まで/１枚あたり最大5MB）</div>
-                <div class="image-upload-container">
-                  <div id="previewContainer"></div>
-                  <div id="errorList" class="error-list"></div>
-                  <input type="file" id="imageInput" accept="image/*" multiple>
-                  <div id="dropArea" class="drop-area">
-                    <label for="imageInput" class="select-button">
-                      画像を選択する
-                    </label>
-                    <p>またはドラッグ&ドロップ</p>
-                  </div>
+              <div>商品画像（3枚まで / 1枚あたり最大5MB）</div>
+              <div class="image-upload-container">
+                <div id="previewContainer"></div>
+                <div id="errorList" class="error-list"></div>
+                <input type="file" id="imageInput" accept="image/*" multiple>
+                <div id="dropArea" class="drop-area">
+                  <label for="imageInput" class="select-button">
+                    画像を選択する
+                  </label>
+                  <p>またはドラッグ&ドロップ</p>
                 </div>
+              </div>
 
             </div>
 

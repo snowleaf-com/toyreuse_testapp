@@ -3,8 +3,6 @@
 }
 
 .drop-area {
-  width: 100%;
-  max-width: 400px;
   padding: 20px;
   border: 2px dashed #FFC0CC;
   border-radius: 10px;
@@ -49,8 +47,6 @@ p {
 #previewContainer {
   display: flex;
   gap: 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 .preview-image {
@@ -64,6 +60,8 @@ p {
   object-fit: cover;
   border-radius: 5px;
   border: 1px solid #ccc;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .remove-btn {
