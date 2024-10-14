@@ -283,6 +283,9 @@ if (!empty($_POST['submit'])) {
 <link rel="stylesheet" href="styles.css">
 
 <body>
+
+  <!-- <script src="script.js"></script> -->
+  <script type="module" src="../js/index.js"></script>
   <?php require 'mypage_header.php' ?>
 
   <div class="index_breadcrumb_wrap" style="margin-bottom: 20px;"><!-- パンくず大枠 -->
@@ -535,81 +538,6 @@ if (!empty($_POST['submit'])) {
       ©︎ TOY REUSE
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-
-
-      // 画像ライブプレビュー
-      var $dropArea = $('.area-drop');
-      var $fileInput = $('.input-file');
-
-      // ドラッグオーバー時の処理
-      $dropArea.on('dragover', function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        $(this).css('border', '3px #ccc dashed');
-      });
-
-      // ドラッグアウト時の処理
-      $dropArea.on('dragleave', function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        $(this).css('border', 'none');
-      });
-
-      // ファイルが選択された時の処理
-      $fileInput.on('change', function(e) {
-        $dropArea.css('border', 'none');
-        $(this).siblings('p').text('');
-        var file = this.files[0];
-        var $img = $(this).siblings('.prev-img');
-        var fileReader = new FileReader();
-
-        // 読み込みが完了した際のイベントハンドラ
-        fileReader.onload = function(event) {
-          // 読み込んだデータをimgに設定
-          $img.attr('src', event.target.result).show();
-          $(this).siblings('.delete-btn').show(); // 削除ボタンを表示
-        }.bind(this); // thisをファイル入力にバインド
-
-        // 画像読み込み
-        fileReader.readAsDataURL(file);
-      });
-
-      // 削除ボタンのクリックイベント
-      $('.delete-btn').on('click', function() {
-        var $dropArea = $(this).closest('.area-drop');
-        var $fileInput = $dropArea.find('.input-file');
-        var $img = $dropArea.find('.prev-img');
-        var $deleteBtn = $(this);
-
-        // プレビューとファイル入力をリセット
-        $img.attr('src', '').hide();
-        $fileInput.val('');
-        $deleteBtn.addClass('delete-btn-hidden').hide();
-        $dropArea.find('p').text('画像を選択してください'); // ラベルを元に戻す
-
-        // サーバー側に削除リクエストを送信
-        var picName = $fileInput.attr('name');
-        $.ajax({
-          url: 'delete_image.php',
-          type: 'POST',
-          data: {
-            pic: picName
-          },
-          success: function(response) {
-            if (response === 'success') {
-              console.log(picName + ' が削除されました。');
-            } else {
-              alert('画像の削除に失敗しました。');
-            }
-          }
-        });
-      });
-    });
-  </script>
-  <script src="script.js"></script>
 </body>
 
 </html>
