@@ -59,7 +59,6 @@ class MailSend
       $mail->Body = mb_convert_encoding($message, "UTF-8", "auto");
 
       $mail->send();
-      $this->debug('送信しました');
     } catch (Exception $e) {
       $this->debug("送信エラー: " . $mail->ErrorInfo);
     }
