@@ -2,3 +2,5 @@
 .env
 /vendor/
 php.log
+mypage/tmp_uploads/**
+mypage/uploads/**
