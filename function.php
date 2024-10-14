@@ -591,8 +591,9 @@ function getUserImgForm($key)
 //画像表示用関数
 function showImg($path)
 {
+
   if (empty($path)) {
-    return 'images/noimage.png';
+    return 'noimage.png';
   } else {
     return $path;
   }
