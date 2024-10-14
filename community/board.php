@@ -263,8 +263,7 @@ if (getJoinedUser($c_id, $u_id)) {
         <br><span class="err_warning"><?php getErrMsg('msg') ?></span>
       <?php endif; ?>
       <form action="board.php?c_id=<?php echo $c_id ?>" method="post">
-        <textarea style="display:block;width:100%;margin:10px auto;height:200px;box-sizing:border-box;border:2px solid #999;border-radius:10px;" placeholder="連絡事項を入力してください" name="msg" class="<?php if (!empty($err_msg['msg'])) echo 'form_warning' ?>"><?php if (!empty($_POST)) echo $_POST['msg'] ?></textarea>
-
+        <textarea style="display:block;width:100%;margin:10px auto;height:200px;box-sizing:border-box;border:2px solid #999;border-radius:10px;" placeholder="連絡事項を入力してください" name="msg" class="<?php if (!empty($err_msg['msg'])) echo 'form_warning'; ?>"><?php if (!empty($_POST['msg'])) echo htmlspecialchars($_POST['msg'], ENT_QUOTES, 'UTF-8'); ?></textarea>
         <div class="prod_flex">
           <a href="./" class="cp_link">コミュニティトップへ</a>
           <button type="submit" class="btn_s" style="background:pink;font-size:14px;width:200px">投稿する</button>
