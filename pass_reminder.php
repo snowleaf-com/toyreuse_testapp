@@ -7,6 +7,14 @@ debug('「　パスワードリマインダーページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
+require 'vendor/autoload.php';  // Composerでインストールしたパッケージの読み込み
+
+use Dotenv\Dotenv;
+
+// .envファイルの読み込み
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 //-------------------変数の定義-------------
 $err_msg = array();
 $page_flg = 0;
@@ -74,7 +82,7 @@ if (!empty($_POST)) {
         debug('登録されています。');
         //URLトークン生成
         $urltoken = bin2hex(random_bytes(64));
-        $url = 'http://localhost:8888/akachan/pass_reminder_recieve.php?urltoken=' . $urltoken;
+        $url = $_ENV['BASE_URL'] .  'pass_reminder_recieve.php?urltoken=' . $urltoken;
 
         //URLトークンをDBに登録（後の照合用）
         $sql = 'INSERT INTO pre_pass_edit SET urltoken = :urltoken, pre_mail = :pre_mail, date = now()';

@@ -1,4 +1,12 @@
 <?php
+require 'vendor/autoload.php';  // Composerでインストールしたパッケージの読み込み
+
+use Dotenv\Dotenv;
+
+// .envファイルの読み込み
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 //---------------お決まり---------------------
 require 'function.php';
 require 'MailSend.php'; //メール送信用
@@ -69,7 +77,7 @@ if (!empty($_POST)) {
     if (empty($err_msg)) {
       //URLトークン生成
       $urltoken = bin2hex(random_bytes(64));
-      $url = 'http://localhost:8888/akachan/registration_form.php?urltoken=' . $urltoken;
+      $url = $_ENV['BASE_URL'] . 'registration_form.php?urltoken=' . $urltoken;
 
       try {
         $dbh = dbConnect();

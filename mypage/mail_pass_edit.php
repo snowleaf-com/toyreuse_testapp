@@ -2,12 +2,19 @@
 //---------------お決まり---------------------
 require '../function.php';
 require '../MailSend.php'; //メール送信用
+require '../vendor/autoload.php';  // Composerでインストールしたパッケージの読み込み
+
+use Dotenv\Dotenv;
+
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debug('「　メールパスワード変更ページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 require 'auth.php';
 
+// .envファイルの読み込み
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 //-------------------変数の定義-------------
 $page_flg = 1;
 $sideName = 'メールアドレス/パスワード変更' . ' - ';
@@ -60,7 +67,7 @@ if (!empty($_POST) && empty($_POST['pass_old']) && empty($_POST['pass_new'])) {
         debug('4');
         //URLトークン生成
         $urltoken = bin2hex(random_bytes(64));
-        $url = 'http://localhost:8888/akachan/mypage/mail_pass_submit.php?urltoken=' . $urltoken;
+        $url = $_ENV['BASE_URL'] . 'mypage/mail_pass_submit.php?urltoken=' . $urltoken;
 
         //URLトークンをDBに登録（後の照合用）
         $dbh = dbConnect();
@@ -143,7 +150,7 @@ if (!empty($_POST['pass_old']) || !empty($_POST['pass_new'])) {
     if (empty($err_msg)) { //両方の処理をする
       //URLトークン生成
       $urltoken = bin2hex(random_bytes(64));
-      $url = 'http://localhost:8888/akachan/mypage/mail_pass_submit.php?urltoken=' . $urltoken;
+      $url = $_ENV['BASE_URL'] . 'mypage/mail_pass_submit.php?urltoken=' . $urltoken;
 
       //URLトークンをDBに登録（後の照合用）
       $dbh = dbConnect();
