@@ -13,7 +13,7 @@ debugLogStart();
 require 'auth.php';
 
 // .envファイルの読み込み
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 //-------------------変数の定義-------------
 $page_flg = 1;
