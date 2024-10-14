@@ -1,4 +1,7 @@
 <?php
+require 'vendor/autoload.php';  // Composerでインストールしたパッケージの読み込み
+
+use Dotenv\Dotenv;
 //================================
 // ログ
 //================================
@@ -58,21 +61,31 @@ function debugLogStart()
 //--------接続
 function dbConnect()
 {
-  $dsn = 'mysql:dbname=akachan;host=localhost;charset=utf8';
-  $user = 'root';
-  $password = 'root';
+  // .envファイルの読み込み
+  $dotenv = Dotenv::createImmutable(__DIR__);
+  $dotenv->load();
+
+  // 環境変数からデータベース接続情報を取得
+  $dsn = 'mysql:dbname=' . $_ENV['DB_NAME'] . ';host=' . $_ENV['DB_HOST'] . ';charset=' . $_ENV['DB_CHARSET'];
+  $user = $_ENV['DB_USER'];
+  $password = $_ENV['DB_PASS'];
+
   $options = array(
-    // SQL実行失敗時にはエラーコードのみ設定
     PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
-    // デフォルトフェッチモードを連想配列形式に設定
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    // バッファードクエリを使う(一度に結果セットをすべて取得し、サーバー負荷を軽減)
-    // SELECTで得た結果に対してもrowCountメソッドを使えるようにする
     PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
   );
-  $dbh = new PDO($dsn, $user, $password, $options);
-  return $dbh;
+
+  // PDOインスタンスを生成
+  try {
+    $dbh = new PDO($dsn, $user, $password, $options);
+    return $dbh;
+  } catch (PDOException $e) {
+    echo '接続失敗: ' . $e->getMessage();
+    exit;
+  }
 }
+
 //------------データベースクエリ用関数（文字列）
 function queryPost($dbh, $sql, $data)
 {
