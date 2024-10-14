@@ -9,7 +9,7 @@ debug('「「「「「「「「「「「「「「「「「「「「「「「「�
 debugLogStart();
 
 
-if(!empty($_POST)) {
+if (!empty($_POST)) {
   debug('POST通信があります。');
   $p_id = $_POST['detailId'];
   $u_id = $_SESSION['user_id'];
@@ -25,7 +25,7 @@ if(!empty($_POST)) {
     $stmt = queryPost($dbh, $sql, $data);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if($result['cnt'] > 0) {
+    if ($result['cnt'] > 0) {
       $sql = 'DELETE FROM p_favorite WHERE product_id = :p_id AND user_id = :u_id';
       $data = array(
         ':p_id' => $p_id,
@@ -40,8 +40,7 @@ if(!empty($_POST)) {
       );
       $stmt = queryPost($dbh, $sql, $data);
     }
-
-  } catch(PDOException $e) { 
+  } catch (PDOException $e) {
     error_log('SQLエラー:' . $e->getMessage());
   }
 }

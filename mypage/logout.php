@@ -6,7 +6,7 @@ debug('「　ログアウトページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
-if(empty($_SESSION['user_id'])) {
+if (empty($_SESSION['user_id'])) {
   echo '不正アクセスです';
   exit();
 }
@@ -21,20 +21,20 @@ debug('ログアウトします。');
 <?php require 'mypage_head.php' ?>
 
 <body class="r_m_f">
-<!-- ヘッダーロゴ -->
-<header class="r_m_f_header">
-  <img src="../toplogo.png">
-</header>
+  <!-- ヘッダーロゴ -->
+  <header class="r_m_f_header">
+    <img src="../images/toplogo.png">
+  </header>
 
-<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
+  <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem">
-    <a itemprop="item" href="../index.php">
+      <a itemprop="item" href="../index.php">
         <span itemprop="name">ホーム</span>
-    </a>
-    <meta itemprop="position" content="1" />
-  </li>
-</ol>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+  </ol>
 
 
 
@@ -44,25 +44,26 @@ debug('ログアウトします。');
     </div>
     <div class="r_m_f_main2">
       <p class="center">ログアウトしました。<br>
-      再度ログインする方は<a href="../login.php" class="cp_link">こちら</a>から。<br>
+        再度ログインする方は<a href="../login.php" class="cp_link">こちら</a>から。<br>
     </div>
 
 
 
 
   </main>
-<footer>
-  <div class="footer">
-    ©︎ TOY REUSE
-  </div>
-</footer>
+  <footer>
+    <div class="footer">
+      ©︎ TOY REUSE
+    </div>
+  </footer>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script>
+  <script>
 
-</script>
+  </script>
 </body>
+
 </html>

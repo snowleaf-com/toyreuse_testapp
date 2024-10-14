@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.image-upload-container {
+  margin: 20px;
+}
+
+#imageInput {
+  display: none; /* Hidden, but still available for click */
+}
+
+.drop-area {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 2px dashed #FFC0CC;
+  border-radius: 10px;
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.drop-area.disabled {
+  pointer-events: none; /* 全てのクリック・ドラッグ操作を無効化 */
+  opacity: 0.5; /* 無効化されたことが分かるように半透明にする */
+}
+
+.drop-area.dragover {
+  background-color: #f0f0f0;
+  border-color: #333;
+}
+
+.select-button {
+  display: inline-block;
+  background-color: #fda1b2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.select-button:hover {
+  background-color: #ff6b6b;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+#previewContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.preview-image {
+  position: relative;
+  display: inline-block;
+}
+
+.preview-image img {
+  width: 133px;
+  height: 133px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.error-list {
+  color: red;                    /* エラーメッセージの文字色を赤に */
+  list-style-type: none;         /* リストスタイルを無効化 */
+}
+
+/* エラーメッセージの個々の項目に対するスタイル */
+.error-list li {
+  margin-bottom: 5px;           /* 各エラーメッセージの下部に余白を設定 */
+}
+
+/* エラーメッセージがあるときのドロップエリアのスタイル */
+.drop-area.error {
+  border-color: red;            /* エラーメッセージがある場合、ドロップエリアのボーダー色を赤に変更 */
+  background-color: #f8d7da;    /* ドロップエリアの背景色を薄い赤に変更 */
+}

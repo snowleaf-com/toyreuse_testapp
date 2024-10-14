@@ -13633,3 +13633,1846 @@
 [26-Apr-2020 21:05:50 Asia/Tokyo] デバッグ：クエリ成功。
 [26-Apr-2020 21:05:50 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
 [26-Apr-2020 21:05:50 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：セッションID：epajrno1bggm3t6fa4pitgc4ki
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => c15785bc876784397a1a2accd3e9678a1aed9c96171ac5e87757cc6ff0506777
+)
+
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1594118713
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[07-Jul-2020 19:45:13 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：セッションID：h16l52ravlklglc65p4sbuag6p
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+)
+
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728019948
+[04-Oct-2024 14:32:28 Asia/Tokyo] エラー発生:SQLSTATE[HY000] [1049] Unknown database 'akachan'
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[04-Oct-2024 14:32:28 Asia/Tokyo] デバッグ：未ログインユーザーです。
+[04-Oct-2024 14:32:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Users/yutayamada/Sites/localhost/akachan/community/index.php on line 159
+[04-Oct-2024 14:32:28 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Users/yutayamada/Sites/localhost/akachan/community/index.php on line 159
+[04-Oct-2024 14:32:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Users/yutayamada/Sites/localhost/akachan/community/index.php on line 187
+[04-Oct-2024 14:32:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Users/yutayamada/Sites/localhost/akachan/function.php on line 915
+[04-Oct-2024 14:32:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Users/yutayamada/Sites/localhost/akachan/function.php on line 927
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：セッションID：ppm0in0hhuos8dilv46herro4p
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 1
+    [login_date] => 1728282354
+    [login_limit] => 3600
+)
+
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728282358
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728285954
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：参加者です
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.id = :c_id AND c.delete_flg = 0
+)
+
+[07-Oct-2024 15:25:58 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT DATE_FORMAT(msg.send_date, "%Y/%m/%d %H:%i") AS send_date, msg.message, msg.from_user, m.nickname, m.pic FROM c_message AS msg 
+            LEFT JOIN members AS m ON msg.from_user = m.id 
+            WHERE msg.community_id = :c_id AND msg.delete_flg = 0
+)
+
+[07-Oct-2024 15:25:58 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:25:58 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:25:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 206
+[07-Oct-2024 15:25:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 225
+[07-Oct-2024 15:25:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 228
+[07-Oct-2024 15:25:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 229
+[07-Oct-2024 15:25:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 230
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：セッションID：lk01tabb2b6v0r5nq05012qves
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 1
+    [login_date] => 1728282358
+    [login_limit] => 3600
+)
+
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728282367
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728285958
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：参加者です
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.id = :c_id AND c.delete_flg = 0
+)
+
+[07-Oct-2024 15:26:07 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT DATE_FORMAT(msg.send_date, "%Y/%m/%d %H:%i") AS send_date, msg.message, msg.from_user, m.nickname, m.pic FROM c_message AS msg 
+            LEFT JOIN members AS m ON msg.from_user = m.id 
+            WHERE msg.community_id = :c_id AND msg.delete_flg = 0
+)
+
+[07-Oct-2024 15:26:07 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：バリデーションOKです。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[07-Oct-2024 15:26:07 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:26:07 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:26:07 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 206
+[07-Oct-2024 15:26:07 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 225
+[07-Oct-2024 15:26:07 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 228
+[07-Oct-2024 15:26:07 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 229
+[07-Oct-2024 15:26:07 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 230
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：セッションID：a5hmt7v2l7loava7p6ns9sg6rt
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 1
+    [login_date] => 1728282367
+    [login_limit] => 3600
+)
+
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728282370
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728285967
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：参加者です
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.id = :c_id AND c.delete_flg = 0
+)
+
+[07-Oct-2024 15:26:10 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT DATE_FORMAT(msg.send_date, "%Y/%m/%d %H:%i") AS send_date, msg.message, msg.from_user, m.nickname, m.pic FROM c_message AS msg 
+            LEFT JOIN members AS m ON msg.from_user = m.id 
+            WHERE msg.community_id = :c_id AND msg.delete_flg = 0
+)
+
+[07-Oct-2024 15:26:10 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：バリデーションOKです。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[07-Oct-2024 15:26:10 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:26:10 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:26:10 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 206
+[07-Oct-2024 15:26:10 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 225
+[07-Oct-2024 15:26:10 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 228
+[07-Oct-2024 15:26:10 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 229
+[07-Oct-2024 15:26:10 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/board.php on line 230
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：セッションID：tpbmksekp727kt9qscmtrjfotn
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [user_id] => 1
+    [login_date] => 1728282457
+    [login_limit] => 3600
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => eefeb687446b0c33b4982ed5febb232c17d0db49241861ba3f5668c6f34ec119
+)
+
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728282458
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728286057
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：クエリ成功。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT 5 OFFSET 0
+)
+
+[07-Oct-2024 15:27:38 Asia/Tokyo] エラー発生:SQLエラー
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[07-Oct-2024 15:27:38 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[07-Oct-2024 15:27:38 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[07-Oct-2024 15:27:38 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[07-Oct-2024 15:27:38 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[07-Oct-2024 15:27:38 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[07-Oct-2024 15:27:38 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：セッションID：but9nocvtu5ife38pbj5mgvnd0
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728336810
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728336811
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340410
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT 5 OFFSET 0
+)
+
+[08-Oct-2024 06:33:31 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:33:31 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:33:31 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:33:31 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:33:31 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:33:31 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:33:31 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：セッションID：g9grbk3ii50lvidp1c7eiuj803
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728336811
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337003
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340411
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT 5 OFFSET 0
+)
+
+[08-Oct-2024 06:36:43 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:36:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:36:43 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:36:43 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:36:43 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:36:43 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:36:43 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：セッションID：nom054ds3p1odpbi3bvv1uulr0
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337254
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337255
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340854
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+              LEFT JOIN members AS m ON c.made_by_id = m.id 
+              WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT :span OFFSET :offset
+)
+
+[08-Oct-2024 06:40:55 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:55 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:55 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:55 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:55 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:40:55 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:40:55 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：セッションID：683530dfglhqan12qt8r7jmb51
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337255
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337256
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340855
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+              LEFT JOIN members AS m ON c.made_by_id = m.id 
+              WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT :span OFFSET :offset
+)
+
+[08-Oct-2024 06:40:56 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:56 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:56 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:56 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:56 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:40:56 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:40:56 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：セッションID：9uumpo70e7msdp0f40jkpqgdb9
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337256
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337257
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340856
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+              LEFT JOIN members AS m ON c.made_by_id = m.id 
+              WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT :span OFFSET :offset
+)
+
+[08-Oct-2024 06:40:57 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：セッションID：rvjtc6i307p6p0gd8bpdsmuj2e
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337257
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337257
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340857
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+              LEFT JOIN members AS m ON c.made_by_id = m.id 
+              WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT :span OFFSET :offset
+)
+
+[08-Oct-2024 06:40:57 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:57 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:40:57 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：セッションID：kj6fg4o9fl91e248bcafg5d993
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337257
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337258
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340857
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+              LEFT JOIN members AS m ON c.made_by_id = m.id 
+              WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT :span OFFSET :offset
+)
+
+[08-Oct-2024 06:40:58 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:40:58 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:40:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:58 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:40:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:40:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:40:58 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type bool in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：セッションID：ofbqd8eted83e6mspc0rmhvr6m
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337258
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337287
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340858
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT 5 OFFSET 0
+)
+
+[08-Oct-2024 06:41:27 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:41:27 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:41:27 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:41:27 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:41:27 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:41:27 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:41:27 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：セッションID：qc7lh9k0hj51q2j3t4nd72dku7
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337287
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => 30e2f5a098feb3951da282f050a0ee317403445475b908cf9de395e2e66a8cf5
+)
+
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337288
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728340887
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT c.id, c.title, c.comment, m.nickname, m.pic FROM community AS c 
+            LEFT JOIN members AS m ON c.made_by_id = m.id 
+            WHERE c.delete_flg = 0 ORDER BY c.create_date DESC LIMIT 5 OFFSET 0
+)
+
+[08-Oct-2024 06:41:28 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:41:28 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:41:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:41:28 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/MAMP/htdocs/akachan/community/index.php on line 159
+[08-Oct-2024 06:41:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/community/index.php on line 187
+[08-Oct-2024 06:41:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 915
+[08-Oct-2024 06:41:28 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /Applications/MAMP/htdocs/akachan/function.php on line 927
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：セッションID：nd3hghenct1gr71vbf9gej3jpp
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337721
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337722
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341321
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：セッションID：npu52glhf0guvgakchbpric8h8
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337722
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337728
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341322
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:48 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：セッションID：b1ms0lvn5kv7ae40js0l473egr
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337728
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337734
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341328
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 06:48:54 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:54 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：セッションID：btu1afeire92jtrrf5l1cif40d
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337734
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337737
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341334
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 06:48:57 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:48:57 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：セッションID：3mk9lo50bseiikdf82qp8uc31t
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337737
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337742
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341337
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：セッションID：155iaputik5bm85dj14bb4va3t
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337742
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337749
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341342
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:09 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：セッションID：kl4kacau0jfr9v0s8a5cevg12m
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337749
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337750
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341349
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：管理者が削除しようとしました。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:10 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:10 Asia/Tokyo] PHP Warning:  Undefined array key "msg" in /Applications/MAMP/htdocs/akachan/community/board.php on line 281
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：セッションID：1pjc1tk2l9pue0gd729d4ojaif
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337750
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337754
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341350
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:14 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：セッションID：n7kdrs7pfccr2arq294levqjhg
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337754
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337755
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341354
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：セッションID：s0ku2cos2cha7aabj77h5h80jg
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337755
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337755
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341355
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:15 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：セッションID：adi90s6ltltabku8befou6fu8j
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337755
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [pic] => 
+    [token] => f9207dcc311ff39a9ad66ad34be33ceaff7afea60fc04adf3b81c136f3ad3ac7
+)
+
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337756
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341355
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:49:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：セッションID：vgchuq6f79or0hlgmc1n1ajn0k
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337837
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => b8c68f7d65bf048126ee29ca3b0e2d6541bb40d499340f4e0adeb5fc1b6dbcdc
+)
+
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337842
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341437
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:50:42 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：セッションID：rt7rub33nq4cojd6p5bqsi65uf
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337842
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => b8c68f7d65bf048126ee29ca3b0e2d6541bb40d499340f4e0adeb5fc1b6dbcdc
+)
+
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728337845
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341442
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 06:50:45 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:50:45 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：セッションID：7o5jmtssf7ehrdofvs6325h02b
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728337845
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => b8c68f7d65bf048126ee29ca3b0e2d6541bb40d499340f4e0adeb5fc1b6dbcdc
+)
+
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728338014
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341445
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 06:53:34 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:34 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：セッションID：4jr03md4hldp5jbgoee39asb18
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728338014
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => b8c68f7d65bf048126ee29ca3b0e2d6541bb40d499340f4e0adeb5fc1b6dbcdc
+)
+
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728338026
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341614
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：管理者が削除しようとしました。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:46 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:46 Asia/Tokyo] PHP Warning:  Undefined array key "msg" in /Applications/MAMP/htdocs/akachan/community/board.php on line 274
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：セッションID：rmagic368523mrv3r4lkmt9l1n
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728338026
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => 
+    [pic2] => 
+    [pic3] => 
+    [token] => b8c68f7d65bf048126ee29ca3b0e2d6541bb40d499340f4e0adeb5fc1b6dbcdc
+)
+
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728338033
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341626
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:53:53 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：セッションID：vnotq59vrstlir62mg9oborrap
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728338098
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [token] => 63b4c2a03b025580a2e753cb7c5356996762d633348a062bba3bce907a15b344
+)
+
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728338099
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341698
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:54:59 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：セッションID：i4b5jitji9k6mfuchnqigpck1g
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728338099
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [token] => 63b4c2a03b025580a2e753cb7c5356996762d633348a062bba3bce907a15b344
+)
+
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728338102
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341699
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:55:02 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：セッションID：q5cs5bifko7gmago74rh2gtt9e
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728338102
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+    [token] => 63b4c2a03b025580a2e753cb7c5356996762d633348a062bba3bce907a15b344
+)
+
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728338105
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728341702
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 06:55:05 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：セッションID：klmt067p7n5kt5tbpks90a7a8t
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 661d03f4a8acad4a025a8338e5123a8548a9823086143c9bc956fb81a9344474
+    [login_date] => 1728365673
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728365676
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369273
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:34:36 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：セッションID：8kkaasluedll5om9dhljqqcium
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 661d03f4a8acad4a025a8338e5123a8548a9823086143c9bc956fb81a9344474
+    [login_date] => 1728365676
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728365678
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369276
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 14:34:38 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:34:38 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：セッションID：gtsgnuiit8m1s08kmebbunbtta
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 661d03f4a8acad4a025a8338e5123a8548a9823086143c9bc956fb81a9344474
+    [login_date] => 1728365678
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728365958
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369278
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 14:39:18 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:39:18 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：セッションID：pmhqka2ofpjqs036ac3maml3cq
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 661d03f4a8acad4a025a8338e5123a8548a9823086143c9bc956fb81a9344474
+    [login_date] => 1728365958
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728365988
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369558
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 14:39:48 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:39:48 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：セッションID：842jgnvndmuq7bmciogiqqo7d7
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366012
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366016
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369612
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:40:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：セッションID：vp7idfrn3mbmk25edbg906p0ok
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366016
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366029
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369616
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：クエリに失敗しました。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => INSERT INTO c_message SET community_id = :c_id, send_date = now(), from_user = :u_id, message = :msg, create_date = now()
+)
+
+[08-Oct-2024 14:40:29 Asia/Tokyo] エラー発生:SQLエラー
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:40:29 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：セッションID：l7ipu83pcnq7g9nlqif98ea4a0
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366029
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366321
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369629
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：メッセージ投稿しました。
+[08-Oct-2024 14:45:21 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /Applications/MAMP/htdocs/akachan/function.php:20
+Stack trace:
+#0 /Applications/MAMP/htdocs/akachan/community/board.php(98): debug(Object(PDOStatement))
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/akachan/function.php on line 20
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：セッションID：jr6vttjdjjg6qv37vfgj8un18m
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366321
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 投稿しました。
+)
+
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366321
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369921
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:21 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：セッションID：21ufb1mstvmp1inq807phgnaap
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366321
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366331
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369921
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：バリデーションOKです。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：メッセージ投稿しました。
+[08-Oct-2024 14:45:31 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /Applications/MAMP/htdocs/akachan/function.php:20
+Stack trace:
+#0 /Applications/MAMP/htdocs/akachan/community/board.php(98): debug(Object(PDOStatement))
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/akachan/function.php on line 20
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：セッションID：rdeguomb3q1tsmngun9in8bl5f
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366331
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 投稿しました。
+)
+
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366331
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369931
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:31 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：セッションID：43m54kum0i7s5vvonf9949qeob
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366331
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366335
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369931
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:35 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：セッションID：qne8otd82ip2lo9ukdlqf7lvsl
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366338
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366340
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369938
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:40 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：セッションID：dq5u4thbavcq90fca7atbfp6f9
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366340
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366341
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369940
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:41 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：セッションID：s80sgvhllog35dm4icqetli5e1
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366341
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366342
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369941
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：管理者が削除しようとしました。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:42 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:42 Asia/Tokyo] PHP Warning:  Undefined array key "msg" in /Applications/MAMP/htdocs/akachan/community/board.php on line 275
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：セッションID：eiove24ri5gdeipci553lpmt6h
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366342
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366343
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369942
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[08-Oct-2024 14:45:43 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：セッションID：m86flt5u7l98r1vqsd3k2171bv
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [token] => 17e5c8d99a5bec5afc3e5d3c0dfc195d4cac720b1a485fd5cb176b8b6dd29523
+    [login_date] => 1728366352
+    [user_id] => 1
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728366355
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728369952
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：参加者です
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：クエリ成功。
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[08-Oct-2024 14:45:55 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：セッションID：66kgdiajqcktu910n0fjb9b1dt
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728630975
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+    [token] => bbf07d501e162e6942658b73da2d6c2903eedba2a8d44cebc3a671224c9a8819
+)
+
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728630976
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634575
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：セッションID：bcd0g469vktc9361762i7j8moo
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728630986
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728630989
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634586
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：参加者です
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:29 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：セッションID：qkkuen7ffhbh74g9i8nosstupq
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728630989
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728630993
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634589
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：参加者です
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：バリデーションOKです。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：メッセージ投稿しました。
+[11-Oct-2024 16:16:33 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /Applications/MAMP/htdocs/akachan/function.php:20
+Stack trace:
+#0 /Applications/MAMP/htdocs/akachan/community/board.php(98): debug(Object(PDOStatement))
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/akachan/function.php on line 20
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：セッションID：4r2isp32pmv6lki0phiofcanlh
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728630993
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 投稿しました。
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728630993
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634593
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：参加者です
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:33 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：セッションID：51pu5j2h8o68n3v3e7hersu1df
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728630993
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728631003
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634593
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：参加者です
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：バリデーションOKです。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：メッセージ投稿しました。
+[11-Oct-2024 16:16:43 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Object of class PDOStatement could not be converted to string in /Applications/MAMP/htdocs/akachan/function.php:20
+Stack trace:
+#0 /Applications/MAMP/htdocs/akachan/community/board.php(98): debug(Object(PDOStatement))
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/akachan/function.php on line 20
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：セッションID：jpimtvg8kh215d2qdsa58dkb8a
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728631003
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 投稿しました。
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728631003
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634603
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：参加者です
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:43 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：セッションID：v2hkuh9sn3n4n39pri1vukogml
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728631003
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728631014
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634603
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：参加者です
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：管理者が削除しようとしました。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:54 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:54 Asia/Tokyo] PHP Warning:  Undefined array key "msg" in /Applications/MAMP/htdocs/akachan/community/board.php on line 275
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：「　コミュニティトップページ　
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：セッションID：v2sij2ed0j0d2a7ff0auv35h5b
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728631014
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+    [pic1] => tmp_uploads/3ab5984ee5d93e8c8e213c0173b1cbfe3d174ba5.png
+    [pic2] => tmp_uploads/9d7a96fadf97dc4f826539706a4312de46a66b58.png
+    [pic3] => tmp_uploads/d30d46a2c55bec2de3e359421e64705c63c3372b.png
+)
+
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728631015
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728634614
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ユーザー情報を取得します。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：クエリ成功。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[11-Oct-2024 16:16:55 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：セッションID：se9adhl65qepiqm08rhmg953od
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728768657
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728768676
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728772257
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：参加者です
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[13-Oct-2024 06:31:16 Asia/Tokyo] デバッグ：ログイン有効期限以内です。
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：「　コミュニティ掲示板ページ　
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：セッションID：o4n596lul8fh3f3pufhhbgqbga
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：セッション変数の中身：Array
+(
+    [login_date] => 1728768679
+    [user_id] => 3
+    [login_limit] => 3600
+    [msg_success] => 
+)
+
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：現在日時タイムスタンプ：1728768680
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：ログイン期限日時タイムスタンプ：1728772279
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：参加者です
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：クエリ成功。
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：ログイン済みユーザーです。
+[13-Oct-2024 06:31:20 Asia/Tokyo] デバッグ：ログイン有効期限以内です。

@@ -10,7 +10,7 @@
       特定商取引に関する表記
     </li>
   </ul>
-  <img src="footerlogo.png" width="80" height="80">
+  <img src="images/footerlogo.png" width="80" height="80">
   ©︎ TOY REUSE, Inc.
-  
+
 </footer>

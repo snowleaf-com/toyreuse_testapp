@@ -14,6 +14,7 @@ debug('タイムアウトです。');
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,20 +25,20 @@ debug('タイムアウトです。');
 </head>
 
 <body class="r_m_f">
-<!-- ヘッダーロゴ -->
-<header class="r_m_f_header">
-  <img src="toplogo.png">
-</header>
+  <!-- ヘッダーロゴ -->
+  <header class="r_m_f_header">
+    <img src="images/toplogo.png">
+  </header>
 
-<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope
+  <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
       itemtype="https://schema.org/ListItem">
-    <a itemprop="item" href="index.php">
+      <a itemprop="item" href="index.php">
         <span itemprop="name">ホーム</span>
-    </a>
-    <meta itemprop="position" content="1" />
-  </li>
-</ol>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+  </ol>
 
 
 
@@ -53,18 +54,19 @@ debug('タイムアウトです。');
 
 
   </main>
-<footer>
-  <div class="footer">
-    ©︎ TOY REUSE
-  </div>
-</footer>
+  <footer>
+    <div class="footer">
+      ©︎ TOY REUSE
+    </div>
+  </footer>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script>
+  <script>
 
-</script>
+  </script>
 </body>
+
 </html>
