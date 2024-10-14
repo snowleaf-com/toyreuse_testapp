@@ -213,7 +213,7 @@ if (!empty($_POST)) {
               <?php if (!empty($val['from_user']) && ($val['from_user'] == $partnerId)): ?>
                 <div class="balloon6">
                   <div class="faceicon">
-                    <img src="mypage/<?php echo $partnerInfo['pic'] ?>">
+                    <img src="mypage/<?php echo showImg($partnerInfo['pic']) ?>">
                   </div>
                   <div class="chatting">
                     <div class="says">
