@@ -43,14 +43,16 @@ const createImagePreview = async (src, previewContainer, enableImageSelection, d
   imgElement.src = src;
   previewDiv.appendChild(imgElement);
 
-  const removeButton = createRemoveButton(previewDiv, previewContainer, src, enableImageSelection);
+
+  // IndexedDBに画像パスを保存し、保存された画像のidを取得
+  const id = await saveImagePath(src); // ここでIDを取得
+
+
+  const removeButton = createRemoveButton(previewDiv, previewContainer, id, enableImageSelection);
   previewDiv.appendChild(removeButton);
 
   previewContainer.appendChild(previewDiv);
   imageCount++;
-
-  // 画像パスをIndexedDBに保存
-  await saveImagePath(src);
 
   // 画像パス追加後のIndexedDBの中身を表示
   console.log("画像パス追加後のIndexedDBの中身:");
@@ -64,7 +66,7 @@ const createImagePreview = async (src, previewContainer, enableImageSelection, d
   }
 };
 
-const createRemoveButton = (previewDiv, previewContainer, src, enableImageSelection) => {
+const createRemoveButton = (previewDiv, previewContainer, id, enableImageSelection) => {
   const removeButton = document.createElement("button");
   removeButton.textContent = "×";
   removeButton.classList.add("remove-btn");
@@ -73,7 +75,7 @@ const createRemoveButton = (previewDiv, previewContainer, src, enableImageSelect
     imageCount--;
 
     // 画像パスをIndexedDBから削除
-    await deleteImagePath(src);
+    await deleteImagePath(id);
 
     // 画像パス削除後のIndexedDBの中身を表示
     console.log("画像パス削除後のIndexedDBの中身:");

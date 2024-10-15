@@ -6,16 +6,14 @@ const storeName = "imageStore";
 export const initDB = () => {
   return new Promise((resolve, reject) => {
     const request = indexedDB.open(dbName, 1);
-
-    request.onerror = (event) => {
-      console.error("IndexedDB error:", event);
-      reject(event);
-    };
-
+    
     request.onupgradeneeded = (event) => {
       const db = event.target.result;
       if (!db.objectStoreNames.contains(storeName)) {
-        db.createObjectStore(storeName, { keyPath: "id", autoIncrement: true });
+        const objectStore = db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
+        
+        // filePathインデックスを作成
+        objectStore.createIndex("filePath", "filePath", { unique: false });
       }
     };
 
@@ -23,45 +21,56 @@ export const initDB = () => {
       const db = event.target.result;
       resolve(db);
     };
+    request.onerror = (event) => {
+      console.error("IndexedDB error:", event);
+      reject(event);
+    };
   });
 };
-
 // 画像パスを保存する関数
 export const saveImagePath = (filePath) => {
-  initDB().then((db) => {
-    const transaction = db.transaction(storeName, "readwrite");
-    const store = transaction.objectStore(storeName);
-    store.add({ filePath });
+  return new Promise((resolve, reject) => { // Promiseを返す
+    initDB().then((db) => {
+      const transaction = db.transaction(storeName, "readwrite");
+      const store = transaction.objectStore(storeName);
 
-    transaction.oncomplete = () => {
-      console.log("File path saved successfully");
-    };
+      const request = store.add({ filePath }); // 画像パスを追加
 
-    transaction.onerror = (event) => {
-      console.error("Failed to save file path:", event);
-    };
+      request.onsuccess = (event) => {
+        const id = event.target.result; // 生成されたIDを取得
+        console.log("File path added successfully with ID:", id);
+        resolve(id); // IDを返す
+      };
+
+      transaction.onerror = (event) => {
+        console.error("Failed to save file path:", event);
+        reject(event); // エラーを返す
+      };
+    }).catch(reject); // initDBのエラーもキャッチ
   });
 };
 
+
 // 画像パスを削除する関数
-export const deleteImagePath = (filePath) => {
-  initDB().then((db) => {
-    const transaction = db.transaction(storeName, "readwrite");
-    const store = transaction.objectStore(storeName);
-    const index = store.index("filePath");
+export const deleteImagePath = (id) => {
+  return new Promise((resolve, reject) => { // Promiseを返す
+    initDB().then((db) => {
+      const transaction = db.transaction(storeName, "readwrite");
+      const store = transaction.objectStore(storeName);
+      const index = store.index("filePath");
 
-    const request = index.getKey(filePath);
-    request.onsuccess = (event) => {
-      const key = event.target.result;
-      if (key !== undefined) {
-        store.delete(key);
-        console.log("File path deleted successfully");
-      }
-    };
+      const request = store.delete(id);
 
-    transaction.onerror = (event) => {
-      console.error("Failed to delete file path:", event);
-    };
+      request.onsuccess = () => {
+        console.log("File path deleted successfully with ID:", id);
+        resolve();
+      };
+
+      request.onerror = (event) => {
+        console.error("Failed to delete file path:", event);
+        reject(event);
+      };
+    });
   });
 };
 
