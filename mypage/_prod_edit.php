@@ -84,11 +84,6 @@ if (!empty($_POST['confirm'])) {
   $price = h($_POST['price']);
   $comment = h($_POST['comment']);
 
-  // 画像を仮アップロードし、パスをセッションに格納
-  $_SESSION['pic1'] = (!empty($_FILES['pic1']['name'])) ? uploadImgTemp($_FILES['pic1'], 'pic1') : (isset($productData['pic1']) ? $productData['pic1'] : '');
-  $_SESSION['pic2'] = (!empty($_FILES['pic2']['name'])) ? uploadImgTemp($_FILES['pic2'], 'pic2') : (isset($productData['pic2']) ? $productData['pic2'] : '');
-  $_SESSION['pic3'] = (!empty($_FILES['pic3']['name'])) ? uploadImgTemp($_FILES['pic3'], 'pic3') : (isset($productData['pic3']) ? $productData['pic3'] : '');
-
   // バリデーション
   if (empty($productData)) {
     // 新規登録時のバリデーション
@@ -281,11 +276,14 @@ if (!empty($_POST['submit'])) {
 
 <?php require 'mypage_head.php' ?>
 <link rel="stylesheet" href="styles.css">
+<script>
+  // JavaScriptファイルに渡す
+  const pageFlag = <?php echo $page_flg; ?>;
+</script>
+<script type="module" src="../js/index.js"></script>
 
 <body>
 
-  <!-- <script src="script.js"></script> -->
-  <script type="module" src="../js/index.js"></script>
   <?php require 'mypage_header.php' ?>
 
   <div class="index_breadcrumb_wrap" style="margin-bottom: 20px;"><!-- パンくず大枠 -->
@@ -423,7 +421,7 @@ if (!empty($_POST['submit'])) {
 
             <p class="center pt-30">
               <input type="hidden" name="token" value="<?php echo h($token); ?>">
-              <button class="btn" type="submit" name="confirm" value="確認する" style="background-color:pink">確認する</button>
+              <button class="btn" name="confirm" value="確認する" style="background-color:pink">確認する</button>
             </p>
           </form>
 
@@ -476,36 +474,28 @@ if (!empty($_POST['submit'])) {
             <div class="cp_iptxt">
               <label class="ef">画像１
                 <p class="confirm_p">
-                  <?php if (!empty($_SESSION['pic1'])): ?>
-                    <img src="<?php echo h($_SESSION['pic1']); ?>" width="200px" height="200px" style="object-fit:contain;<?php if (empty($_SESSION['pic1'])) echo ' display:none;' ?>">
+                  <img id="image1" src="" width="200px" height="200px" style="object-fit:contain; display:none;">
                 </p>
-              <?php endif; ?>
-              <input type="hidden" name="pic1" value="<?php echo h($_SESSION['pic1']) ?>">
               </label>
             </div>
+
             <div class="cp_iptxt">
               <label class="ef">画像２
                 <p class="confirm_p">
-                  <?php if (!empty($_SESSION['pic2'])): ?>
-                    <img src="<?php echo h($_SESSION['pic2']); ?>" width="200px" height="200px" style="object-fit:contain;<?php if (empty($_SESSION['pic2'])) echo ' display:none;' ?>">
+                  <img id="image2" src="" width="200px" height="200px" style="object-fit:contain; display:none;">
                 </p>
-              <?php endif; ?>
-              <input type="hidden" name="pic2" value="<?php echo h($_SESSION['pic2']) ?>">
               </label>
             </div>
+
             <div class="cp_iptxt">
               <label class="ef">画像３
                 <p class="confirm_p">
-                  <?php if (!empty($_SESSION['pic3'])): ?>
-                    <img src="<?php echo h($_SESSION['pic3']); ?>" width="200px" height="200px" style="object-fit:contain;<?php if (empty($_SESSION['pic3'])) echo ' display:none;' ?>">
+                  <img id="image3" src="" width="200px" height="200px" style="object-fit:contain; display:none;">
                 </p>
-              <?php endif; ?>
-              <input type="hidden" name="pic3" value="<?php echo h($_SESSION['pic3']) ?>">
               </label>
             </div>
 
-
-            <input type="hidden" name="token" value="<?php echo h($token); ?>">
+            <!-- トークンやボタンなど他のフォームフィールド -->
             <p class="center pt-30">
               <button class="btn_s" type="submit" name="back" style="background-color:azure" value="修正する">修正する</button>
               <button class="btn_s" type="submit" name="submit" value="登録する">登録する</button>
