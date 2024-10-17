@@ -1,4 +1,25 @@
 // imageDisplay.js
+import { getAllImages } from './dbHandler.js';
+import { displaySavedImage, disableImageSelection, enableImageSelection, maxImages, setImageCount, getImageCount } from './imageHandler.js';
+
+
+// IndexedDBから取得した画像を表示する関数
+export const loadExistingImages = async (previewContainer, errorList, dropArea, imageInput) => {
+  const images = await getAllImages(); // IndexedDBから画像パスを取得
+  images.forEach((image) => {
+    // 既存の画像を表示
+    displaySavedImage(image.filePath, previewContainer, image.id, () => enableImageSelection(dropArea, imageInput), () => disableImageSelection(dropArea, imageInput));
+  });
+  
+  // 画像の数でimageCountを初期化
+  setImageCount(images.length);
+  // 画像が最大数に達している場合は画像選択を無効にする
+  if (getImageCount() >= maxImages) {
+    disableImageSelection(dropArea, imageInput);
+  } else {
+    enableImageSelection(dropArea, imageInput);
+  }
+};
 
 export function displayImages() {
   // 画像を表示するための関数

@@ -57,7 +57,6 @@ export const deleteImagePath = (id) => {
     initDB().then((db) => {
       const transaction = db.transaction(storeName, "readwrite");
       const store = transaction.objectStore(storeName);
-      const index = store.index("filePath");
 
       const request = store.delete(id);
 

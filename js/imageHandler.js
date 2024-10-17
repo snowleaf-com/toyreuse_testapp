@@ -3,7 +3,15 @@ import { saveImagePath, deleteImagePath, getAllImages } from './dbHandler.js';
 
 export const maxImages = 3;
 export const maxSize = 5 * 1024 * 1024; // 5MB
-let imageCount = 0;
+export let imageCount = 0;
+
+export const setImageCount = (newCount) => {
+  imageCount = newCount;
+};
+
+export const getImageCount = () => {
+  return imageCount;
+};
 
 export const handleFiles = (files, previewContainer, errorList, enableImageSelection, disableImageSelection) => {
   const remainingSlots = maxImages - imageCount;
@@ -35,7 +43,7 @@ const addError = (errorList, message) => {
   errorList.appendChild(errorItem);
 };
 
-const createImagePreview = async (src, previewContainer, enableImageSelection, disableImageSelection) => {
+export const createImagePreview = async (src, previewContainer, enableImageSelection, disableImageSelection) => {
   const previewDiv = document.createElement("div");
   previewDiv.classList.add("preview-image");
 
@@ -95,4 +103,24 @@ export const disableImageSelection = (dropArea, imageInput) => {
 export const enableImageSelection = (dropArea, imageInput) => {
   dropArea.classList.remove("disabled");
   imageInput.disabled = false;
+};
+
+export const displaySavedImage = (src, previewContainer, id, enableImageSelection, disableImageSelection) => {
+  const previewDiv = document.createElement("div");
+  previewDiv.classList.add("preview-image");
+
+  const imgElement = document.createElement("img");
+  imgElement.src = src;
+  previewDiv.appendChild(imgElement);
+
+  // 削除ボタンを作成
+  const removeButton = createRemoveButton(previewDiv, previewContainer, id, enableImageSelection);
+  previewDiv.appendChild(removeButton);
+
+  previewContainer.appendChild(previewDiv);
+  imageCount++;
+
+  if (imageCount >= maxImages) {
+    disableImageSelection();
+  }
 };

@@ -1,6 +1,7 @@
 // index.js
 import { initDropAreaEvents, initImageInputEvents } from './uiHandler.js';
 import { displayImages } from './imageDisplay.js';
+import { loadExistingImages } from './imageDisplay.js';
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -9,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropArea = document.getElementById("dropArea");
     const previewContainer = document.getElementById("previewContainer");
     const errorList = document.getElementById("errorList");
+
+    // リロード時にIndexedDBから既存の画像を取得して表示し、imageCountを初期化
+    loadExistingImages(previewContainer, errorList, dropArea, imageInput);
 
     initDropAreaEvents(dropArea, imageInput, previewContainer, errorList);
     initImageInputEvents(imageInput, previewContainer, errorList, dropArea);
