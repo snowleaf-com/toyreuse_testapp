@@ -403,7 +403,7 @@ if (!empty($_POST['submit'])) {
 
             <p class="center pt-30">
               <input type="hidden" name="token" value="<?php echo h($token); ?>">
-              <button class="btn" name="confirm" value="確認する" style="background-color:pink">確認する</button>
+              <button class="btn" name="confirm" id="confirmButton" value="確認する" style="background-color:pink">確認する</button>
             </p>
           </form>
 
@@ -479,7 +479,7 @@ if (!empty($_POST['submit'])) {
 
             <!-- トークンやボタンなど他のフォームフィールド -->
             <p class="center pt-30">
-              <button class="btn_s" type="submit" name="back" style="background-color:azure" value="修正する">修正する</button>
+              <button class="btn_s" id="editButton" type="submit" name="back" style="background-color:azure" value="修正する">修正する</button>
               <button class="btn_s" type="submit" name="submit" value="登録する">登録する</button>
             </p>
 

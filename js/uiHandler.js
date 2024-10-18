@@ -1,5 +1,6 @@
 // uiHandler.js
 import { handleFiles, enableImageSelection, disableImageSelection } from './imageHandler.js';
+import { clearAllImagePaths } from './dbHandler.js';
 
 export const initDropAreaEvents = (dropArea, imageInput, previewContainer, errorList) => {
   const preventDefaults = (e) => {
