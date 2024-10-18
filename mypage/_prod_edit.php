@@ -122,24 +122,6 @@ if (!empty($_POST['confirm'])) {
 
 // 修正するボタン押下時
 if (!empty($_POST['back'])) {
-  // 仮アップロード画像の削除
-  $tempPics = ['pic1', 'pic2', 'pic3'];
-  foreach ($tempPics as $pic) {
-    if (!empty($_SESSION[$pic])) {
-      $tempFilePath = $_SESSION[$pic];
-      // ファイルが存在するか確認
-      if (file_exists($tempFilePath) && strpos($tempFilePath, 'tmp_uploads/') === 0) {
-        // ファイルの削除
-        if (!unlink($tempFilePath)) {
-          error_log("仮アップロードファイルの削除に失敗しました: " . $tempFilePath);
-          // 必要に応じてユーザーにエラーメッセージを表示
-          $access_err_msg[] = '仮アップロードファイルの削除に失敗しました。';
-        }
-      }
-      // セッションから削除
-      unset($_SESSION[$pic]);
-    }
-  }
   $page_flg = 1; // 編集ページに戻る
 }
 
