@@ -47,7 +47,6 @@ p {
 #previewContainer {
   display: flex;
   gap: 10px;
-  justify-content: center;
 }
 
 .preview-image {
