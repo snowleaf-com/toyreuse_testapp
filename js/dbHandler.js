@@ -103,24 +103,6 @@ export const clearAllImagePaths = async () => {
   }
 };
 
-// // 全ての画像パスを削除する関数
-// export const clearAllImagePaths = () => {
-//   initDB().then((db) => {
-//     const transaction = db.transaction(storeName, "readwrite");
-//     const store = transaction.objectStore(storeName);
-//     const clearRequest = store.clear();
-
-//     clearRequest.onsuccess = () => {
-//       console.log("All file paths deleted successfully");
-//     };
-
-//     clearRequest.onerror = (event) => {
-//       console.error("Failed to delete all file paths:", event);
-//     };
-//   });
-// };
-
-
 // 全ての画像パスを取得する関数
 export const getAllImages = () => {
   return new Promise((resolve, reject) => {
