@@ -2,6 +2,10 @@
 require 'vendor/autoload.php';  // Composerでインストールしたパッケージの読み込み
 
 use Dotenv\Dotenv;
+// .envファイルの読み込み
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 //================================
 // ログ
 //================================
@@ -61,10 +65,6 @@ function debugLogStart()
 //--------接続
 function dbConnect()
 {
-  // .envファイルの読み込み
-  $dotenv = Dotenv::createImmutable(__DIR__);
-  $dotenv->load();
-
   // 環境変数からデータベース接続情報を取得
   $dsn = 'mysql:dbname=' . $_ENV['DB_NAME'] . ';host=' . $_ENV['DB_HOST'] . ';charset=' . $_ENV['DB_CHARSET'];
   $user = $_ENV['DB_USER'];
@@ -1192,3 +1192,13 @@ function appendGetParam($arr_del_key = array())
     return $str;
   }
 }
+
+
+// 共通のJSロジック（プレビュー画像データ削除の関数）
+function embedCommonJS()
+{
+  $baseUrl = $_ENV['BASE_URL']; 
+  echo '<script type="module" src="' . $baseUrl . 'js/common.js"></script>';
+}
+// 呼び出し
+embedCommonJS();

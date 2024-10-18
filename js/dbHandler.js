@@ -1,6 +1,6 @@
 // dbHandler.js
+export const storeName = "imageStore";
 const dbName = "imageDB";
-const storeName = "imageStore";
 
 // IndexedDBを初期化する関数
 export const initDB = () => {
@@ -73,22 +73,53 @@ export const deleteImagePath = (id) => {
   });
 };
 
-// 全ての画像パスを削除する関数
-export const clearAllImagePaths = () => {
-  initDB().then((db) => {
+// 指定したオブジェクトストアから全データを削除する関数
+export const clearAllImagePaths = async () => {
+  try {
+    const db = await initDB(); // データベースを初期化
     const transaction = db.transaction(storeName, "readwrite");
     const store = transaction.objectStore(storeName);
-    const clearRequest = store.clear();
+    
+    const clearRequest = store.clear(); // オブジェクトストア内のすべてのデータを削除
 
     clearRequest.onsuccess = () => {
-      console.log("All file paths deleted successfully");
+      console.log("All data deleted successfully");
     };
 
     clearRequest.onerror = (event) => {
-      console.error("Failed to delete all file paths:", event);
+      console.error("Failed to delete all data:", event);
     };
-  });
+
+    // トランザクションが完了したときの処理
+    transaction.oncomplete = () => {
+      console.log("Transaction completed successfully");
+    };
+
+    transaction.onerror = (event) => {
+      console.error("Transaction failed:", event);
+    };
+  } catch (error) {
+    console.error("Error during deletion:", error);
+  }
 };
+
+// // 全ての画像パスを削除する関数
+// export const clearAllImagePaths = () => {
+//   initDB().then((db) => {
+//     const transaction = db.transaction(storeName, "readwrite");
+//     const store = transaction.objectStore(storeName);
+//     const clearRequest = store.clear();
+
+//     clearRequest.onsuccess = () => {
+//       console.log("All file paths deleted successfully");
+//     };
+
+//     clearRequest.onerror = (event) => {
+//       console.error("Failed to delete all file paths:", event);
+//     };
+//   });
+// };
+
 
 // 全ての画像パスを取得する関数
 export const getAllImages = () => {
