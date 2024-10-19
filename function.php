@@ -1192,13 +1192,3 @@ function appendGetParam($arr_del_key = array())
     return $str;
   }
 }
-
-
-// 共通のJSロジック（プレビュー画像データ削除の関数）
-function embedCommonJS()
-{
-  $baseUrl = $_ENV['BASE_URL']; 
-  echo '<script type="module" src="' . $baseUrl . 'js/common.js"></script>';
-}
-// 呼び出し
-embedCommonJS();

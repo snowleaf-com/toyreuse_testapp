@@ -58,7 +58,14 @@ $sideName = 'マイページ' . ' - ';
     }
     $('.jscroll').jscroll(jscrollOption);
   </script>
-
+  <?php
+  function embedCommonJS()
+  {
+    $baseUrl = $_ENV['BASE_URL'];
+    echo '<script type="module" src="' . $baseUrl . 'js/common.js"></script>';
+  }
+  embedCommonJS();
+  ?>
 </head>
 
 <body>
