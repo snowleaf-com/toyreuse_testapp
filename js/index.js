@@ -1,6 +1,7 @@
 // index.js
-import { initDropAreaEvents, initImageInputEvents, setupButtonListener } from './uiHandler.js';
+import { initDropAreaEvents, initImageInputEvents } from './uiHandler.js';
 import { displayImages, loadExistingImages } from './imageDisplay.js';
+import { initSubmitButtonEvent } from './submitHandler.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,5 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initImageInputEvents(imageInput, previewContainer, errorList, dropArea);
   } else if (pageFlag === 2) {
     displayImages();
+
+    // 送信ボタンのイベントを初期化
+    initSubmitButtonEvent("productsForm", "submitButton");
   }
 });

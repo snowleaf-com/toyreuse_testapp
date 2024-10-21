@@ -1,4 +1,9 @@
 <?php
+// デバッグ用にエラー表示を有効にする
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 //---------------お決まり---------------------
 require '../function.php';
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
@@ -27,13 +32,6 @@ $token = $_SESSION['token'];
 
 //クリックジャッキング対策
 header('X-FRAME-OPTIONS: SAMEORIGIN');
-
-// ページ読み込み時にセッションの仮アップロードデータをリセット（GETリクエスト時）
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-  unset($_SESSION['pic1']);
-  unset($_SESSION['pic2']);
-  unset($_SESSION['pic3']);
-}
 
 //-------------GETがあるとき---------------
 if (!empty($_GET)) {
@@ -127,11 +125,34 @@ if (!empty($_POST['back'])) {
 
 //送信ボタン押下時
 if (!empty($_POST['submit'])) {
-  // CSRFトークンの確認
-  if ($_POST['token'] !== $_SESSION['token']) {
-    echo "不正アクセスの可能性あり";
-    exit();
+  // エラー処理
+  try {
+    // CSRFトークンの確認
+    if ($_POST['token'] !== $_SESSION['token']) {
+      echo "不正アクセスの可能性あり";
+      exit();
+    }
+
+    $_SESSION['edit_flg'] = $edit_flg;
+    if (!empty($p_id)) {
+      $_SESSION['products_id'] = $p_id;
+    }
+
+    header('Content-Type: application/json');
+    echo json_encode([
+      'status' => 'success',
+      'redirect_url' => '/akachan/mypage/prod_success.php', // 遷移先のURL
+      'message' => 'データが正常に処理されました',
+    ]);
+  } catch (Exception $e) {
+    header('Content-Type: application/json');
+    echo json_encode([
+      'status' => 'error',
+      'message' => $e->getMessage(),
+    ]);
   }
+  exit;
+
   // トークンをクリア
   unset($_SESSION['token']);
 
@@ -141,6 +162,7 @@ if (!empty($_POST['submit'])) {
   $price = h($_POST['price']);
   $comment = h($_POST['comment']);
 
+  exit;
   // セッションから画像パスを取得
   $pic1 = getImgForm('pic1');
   $pic2 = getImgForm('pic2');
@@ -256,13 +278,42 @@ if (!empty($_POST['submit'])) {
 }
 ?>
 
-<?php require 'mypage_head.php' ?>
-<link rel="stylesheet" href="styles.css">
-<script>
-  // JavaScriptファイルに渡す
-  const pageFlag = <?php echo $page_flg; ?>;
-</script>
-<script type="module" src="../js/index.js"></script>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo $sideName ?>TOY REUSE - 赤ちゃん用品のリサイクル、コミュニティ -</title>
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/3.4.1/jquery.jscroll.min.js"></script>
+  <script>
+    var jscrollOption = {
+      loadingHtml: '読み込み中', // 記事読み込み中の表示、画像等をHTML要素で指定することも可能
+      autoTrigger: true, // 次の表示コンテンツの読み込みを自動( true )か、ボタンクリック( false )にする
+      padding: 20, // autoTriggerがtrueの場合、指定したコンテンツの下から何pxで読み込むか指定
+      contentSelector: '.jscroll' // 読み込む範囲を指定、指定がなければページごと丸っと読み込む
+    }
+    $('.jscroll').jscroll(jscrollOption);
+  </script>
+  <?php
+  function embedCommonJS()
+  {
+    $baseUrl = $_ENV['BASE_URL'];
+    echo '<script type="module" src="' . $baseUrl . 'js/common.js"></script>';
+  }
+  embedCommonJS();
+  ?>
+  <script>
+    // JavaScriptファイルに渡す
+    const pageFlag = <?php echo $page_flg; ?>;
+  </script>
+  <script type="module" src="../js/index.js"></script>
+</head>
 
 <body>
 
@@ -415,7 +466,7 @@ if (!empty($_POST['submit'])) {
 
           <h3 class="center"><span class="err_warning"><?php getErrMsg('common'); ?></span></h3>
           <p class="center">以下でよろしいですか？</p>
-          <form method="post" action="">
+          <form method="post" action="" id="productsForm">
 
             <div class="cp_iptxt">
               <label class="ef">商品タイトル
@@ -479,19 +530,13 @@ if (!empty($_POST['submit'])) {
 
             <!-- トークンやボタンなど他のフォームフィールド -->
             <p class="center pt-30">
+              <input type="hidden" name="token" value="<?php echo h($token); ?>">
               <button class="btn_s" id="editButton" type="submit" name="back" style="background-color:azure" value="修正する">修正する</button>
-              <button class="btn_s" type="submit" name="submit" value="登録する">登録する</button>
+              <button class="btn_s" id="submitButton" type="submit" name="submit" value="登録する">登録する</button>
             </p>
 
           </form>
 
-
-          <!-- ページフラグが３のとき -->
-        <?php elseif ($page_flg === 3): ?>
-
-          <p class="center pt-20 pb-20">登録が完了しました。<br>
-            <a href="mypage.php">マイページへ戻る</a>
-          </p>
         <?php endif; ?>
 
       <?php else: ?>
