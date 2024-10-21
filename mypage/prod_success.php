@@ -21,14 +21,13 @@ $sideName = '';
 $userData = getUser($_SESSION['user_id']); // ユーザー情報取得
 
 if (!isset($_SESSION['edit_flg']) || $_SESSION['edit_flg'] === '') {
-  // セッション変数が設定されていない場合や、空である場合はアクセスを拒否
+  // セッション変数が設定されていない場合または、変数が空文字である場合はアクセスを拒否
   $access_err_msg[] = '不正なアクセスです。';
   $sideName = 'エラー' . ' - ';
 } else {
-  if (isset($_SESSION['edit_flg'])) {
-    $edit_flg = $_SESSION['edit_flg']; // true または false が入る
-    unset($_SESSION['edit_flg']);
-  }
+  // $_SESSION['edit_flg'] が true または false の場合の処理
+  $edit_flg = $_SESSION['edit_flg']; // true または false が入る
+  unset($_SESSION['edit_flg']);
 
   // products_id の存在チェック
   if (!empty($_SESSION['products_id'])) {
