@@ -2,6 +2,10 @@
 require 'vendor/autoload.php';  // Composerでインストールしたパッケージの読み込み
 
 use Dotenv\Dotenv;
+// .envファイルの読み込み
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 //================================
 // ログ
 //================================
@@ -61,10 +65,6 @@ function debugLogStart()
 //--------接続
 function dbConnect()
 {
-  // .envファイルの読み込み
-  $dotenv = Dotenv::createImmutable(__DIR__);
-  $dotenv->load();
-
   // 環境変数からデータベース接続情報を取得
   $dsn = 'mysql:dbname=' . $_ENV['DB_NAME'] . ';host=' . $_ENV['DB_HOST'] . ';charset=' . $_ENV['DB_CHARSET'];
   $user = $_ENV['DB_USER'];
@@ -120,11 +120,16 @@ function queryPostNum($dbh, $sql, $data)
 // セキュリティ
 //================================
 //------------サニタイズ
-function h($str)
+function h($var)
 {
-  return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+  if (is_array($var)) {
+    // 配列の場合、各要素に対して htmlspecialchars を適用
+    return array_map('h', $var); // 再帰的に h() を適用
+  } else {
+    // 文字列の場合は通常の htmlspecialchars を適用
+    return htmlspecialchars($var, ENT_QUOTES, 'UTF-8');
+  }
 }
-
 
 
 

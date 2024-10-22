@@ -1,18 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
-.image-upload-container {
-  margin: 20px;
-}
-
 #imageInput {
   display: none; /* Hidden, but still available for click */
 }
 
 .drop-area {
-  width: 100%;
-  max-width: 400px;
   padding: 20px;
   border: 2px dashed #FFC0CC;
   border-radius: 10px;
@@ -71,6 +61,8 @@ p {
   object-fit: cover;
   border-radius: 5px;
   border: 1px solid #ccc;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .remove-btn {

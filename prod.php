@@ -142,6 +142,14 @@ if (!empty($_POST['buy']) && isLogin()) {
       overflow: hidden;
     }
   </style>
+  <?php
+  function embedCommonJS()
+  {
+    $baseUrl = $_ENV['BASE_URL'];
+    echo '<script type="module" src="' . $baseUrl . 'js/common.js"></script>';
+  }
+  embedCommonJS();
+  ?>
 </head>
 
 <body>

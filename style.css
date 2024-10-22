@@ -1009,9 +1009,10 @@ width: 1000px;
 /* 画像アップロードフォーム */
 .imgDrop {
   display: flex;
-  margin: 0 auto;
-  width: 70%;
-  height: 140px;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 50%;
+  justify-content: center;
 }
 .imgDrop-container{
   width: 300px;
@@ -1066,6 +1067,9 @@ width: 1000px;
 .delete-btn-hidden {
   display: none;
 }
+
+
+
 
 /* 検索フォーム */
 input[type=search] {
