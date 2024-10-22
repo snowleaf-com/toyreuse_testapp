@@ -128,152 +128,99 @@ if (!empty($_POST['submit'])) {
   // エラー処理
   try {
     // CSRFトークンの確認
-    if ($_POST['token'] !== $_SESSION['token']) {
-      echo "不正アクセスの可能性あり";
+    if (!isset($_POST['token']) || $_POST['token'] !== $_SESSION['token']) {
+      echo json_encode(['status' => 'error', 'message' => '不正アクセスの可能性あり']);
       exit();
     }
+    // トークンをクリア
+    unset($_SESSION['token']);
 
-    $_SESSION['edit_flg'] = $edit_flg;
-    if (!empty($p_id)) {
-      $_SESSION['products_id'] = $p_id;
+    // データベースに入れる処理
+    $name = h($_POST['name']);
+    $category = h($_POST['category_id']);
+    $price = h($_POST['price']);
+    $comment = h($_POST['comment']);
+
+    // 画像のアップロード処理
+    $pic1 = $pic2 = $pic3 = '';
+    if (!empty($_FILES['pic1'])) {
+      $pic1 = uploadImg($_FILES['pic1'], 'pic1');
+    }
+    if (!empty($_FILES['pic2'])) {
+      $pic2 = uploadImg($_FILES['pic2'], 'pic2');
+    }
+    if (!empty($_FILES['pic3'])) {
+      $pic3 = uploadImg($_FILES['pic3'], 'pic3');
     }
 
-    header('Content-Type: application/json');
-    echo json_encode([
-      'status' => 'success',
-      'redirect_url' => '/akachan/mypage/prod_success.php', // 遷移先のURL
-      'message' => 'データが正常に処理されました',
-    ]);
+    // データベースへの登録処理
+    if (empty($access_err_msg)) {
+      try {
+        // DBへ接続
+        $dbh = dbConnect();
+        // SQL文作成
+        if ($edit_flg) {
+          debug('DB更新です。');
+          $sql = 'UPDATE products SET name = :name, category_id = :category, price = :price, comment = :comment, pic1 = :pic1, pic2 = :pic2, pic3 = :pic3 WHERE user_id = :u_id AND id = :p_id';
+          $data = array(
+            ':name' => $name,
+            ':category' => $category,
+            ':price' => $price,
+            ':comment' => $comment,
+            ':pic1' => $pic1,
+            ':pic2' => $pic2,
+            ':pic3' => $pic3,
+            ':u_id' => $_SESSION['user_id'],
+            ':p_id' => $p_id
+          );
+        } else {
+          debug('DB新規登録です。');
+          $sql = 'INSERT INTO 
+                products (name, category_id, price, comment, pic1, pic2, pic3, user_id, create_date ) 
+                VALUES (:name, :category, :price, :comment, :pic1, :pic2, :pic3, :u_id, :date)';
+          $data = array(
+            ':name' => $name,
+            ':category' => $category,
+            ':price' => $price,
+            ':comment' => $comment,
+            ':pic1' => $pic1,
+            ':pic2' => $pic2,
+            ':pic3' => $pic3,
+            ':u_id' => $_SESSION['user_id'],
+            ':date' => date('Y-m-d H:i:s')
+          );
+        }
+        debug('SQL：' . $sql);
+        debug('流し込みデータ：' . print_r($data, true));
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
+
+        // クエリ成功の場合
+        if ($stmt) {
+          // 成功した場合の処理をここに記述
+          //成功ページへの値受け渡し処理
+          $_SESSION['edit_flg'] = $edit_flg;
+          if (!empty($p_id)) {
+            $_SESSION['products_id'] = $p_id;
+          }
+          echo json_encode([
+            'status' => 'success',
+            'redirect_url' => '/akachan/mypage/prod_success.php', // 遷移先のURL
+            'message' => 'データが正常に処理されました',
+          ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+        }
+      } catch (PDOException $e) {
+        error_log('エラー発生:' . $e->getMessage());
+        $access_err_msg[] = 'エラーが発生しました';
+      }
+    }
+    exit();
   } catch (Exception $e) {
-    header('Content-Type: application/json');
     echo json_encode([
       'status' => 'error',
       'message' => $e->getMessage(),
     ]);
-  }
-  exit;
-
-  // トークンをクリア
-  unset($_SESSION['token']);
-
-  // 変数にユーザー情報を代入
-  $name = h($_POST['name']);
-  $category = h($_POST['category_id']);
-  $price = h($_POST['price']);
-  $comment = h($_POST['comment']);
-
-  exit;
-  // セッションから画像パスを取得
-  $pic1 = getImgForm('pic1');
-  $pic2 = getImgForm('pic2');
-  $pic3 = getImgForm('pic3');
-
-  // 本アップロード処理
-  function startsWith($str1, $str2)
-  {
-    if (empty($str1)) {
-      return false;
-    }
-    $length = mb_strlen($str2);
-    return (mb_substr($str1, 0, $length) === $str2);
-  }
-
-  // pic1 の移動処理
-  if (!empty($pic1) && startsWith($pic1, 'tmp_uploads/')) {
-    $kari1 = mb_substr($pic1, strlen('tmp_uploads/'));
-    $kari2 = 'uploads/' . $kari1;
-    if (rename($pic1, $kari2)) {
-      $pic1 = $kari2;
-    } else {
-      error_log("ファイルの移動に失敗しました: " . $pic1);
-      $access_err_msg[] = '画像1のアップロードに失敗しました。';
-    }
-  } elseif (empty($pic1)) {
-    $pic1 = null;
-  }
-
-  // pic2 の移動処理
-  if (!empty($pic2) && startsWith($pic2, 'tmp_uploads/')) {
-    $kari1 = mb_substr($pic2, strlen('tmp_uploads/'));
-    $kari2 = 'uploads/' . $kari1;
-    if (rename($pic2, $kari2)) {
-      $pic2 = $kari2;
-    } else {
-      error_log("ファイルの移動に失敗しました: " . $pic2);
-      $access_err_msg[] = '画像2のアップロードに失敗しました。';
-    }
-  } elseif (empty($pic2)) {
-    $pic2 = null;
-  }
-
-  // pic3 の移動処理
-  if (!empty($pic3) && startsWith($pic3, 'tmp_uploads/')) {
-    $kari1 = mb_substr($pic3, strlen('tmp_uploads/'));
-    $kari2 = 'uploads/' . $kari1;
-    if (rename($pic3, $kari2)) {
-      $pic3 = $kari2;
-    } else {
-      error_log("ファイルの移動に失敗しました: " . $pic3);
-      $access_err_msg[] = '画像3のアップロードに失敗しました。';
-    }
-  } elseif (empty($pic3)) {
-    $pic3 = null;
-  }
-
-  // データベースへの登録処理
-  if (empty($access_err_msg)) {
-    try {
-      // DBへ接続
-      $dbh = dbConnect();
-      // SQL文作成
-      if ($edit_flg) {
-        debug('DB更新です。');
-        $sql = 'UPDATE products SET name = :name, category_id = :category, price = :price, comment = :comment, pic1 = :pic1, pic2 = :pic2, pic3 = :pic3 WHERE user_id = :u_id AND id = :p_id';
-        $data = array(
-          ':name' => $name,
-          ':category' => $category,
-          ':price' => $price,
-          ':comment' => $comment,
-          ':pic1' => $pic1,
-          ':pic2' => $pic2,
-          ':pic3' => $pic3,
-          ':u_id' => $_SESSION['user_id'],
-          ':p_id' => $p_id
-        );
-      } else {
-        debug('DB新規登録です。');
-        $sql = 'INSERT INTO 
-                products (name, category_id, price, comment, pic1, pic2, pic3, user_id, create_date ) 
-                VALUES (:name, :category, :price, :comment, :pic1, :pic2, :pic3, :u_id, :date)';
-        $data = array(
-          ':name' => $name,
-          ':category' => $category,
-          ':price' => $price,
-          ':comment' => $comment,
-          ':pic1' => $pic1,
-          ':pic2' => $pic2,
-          ':pic3' => $pic3,
-          ':u_id' => $_SESSION['user_id'],
-          ':date' => date('Y-m-d H:i:s')
-        );
-      }
-      debug('SQL：' . $sql);
-      debug('流し込みデータ：' . print_r($data, true));
-      // クエリ実行
-      $stmt = queryPost($dbh, $sql, $data);
-
-      // クエリ成功の場合
-      if ($stmt) {
-        // 仮アップロードのセッションデータをクリア
-        unset($_SESSION['pic1']);
-        unset($_SESSION['pic2']);
-        unset($_SESSION['pic3']);
-        $page_flg = 3;
-      }
-    } catch (PDOException $e) {
-      error_log('エラー発生:' . $e->getMessage());
-      $access_err_msg[] = 'エラーが発生しました';
-    }
+    exit(); // エラー時にスクリプトを終了
   }
 }
 ?>
@@ -290,16 +237,6 @@ if (!empty($_POST['submit'])) {
   <link href="../style.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/3.4.1/jquery.jscroll.min.js"></script>
-  <script>
-    var jscrollOption = {
-      loadingHtml: '読み込み中', // 記事読み込み中の表示、画像等をHTML要素で指定することも可能
-      autoTrigger: true, // 次の表示コンテンツの読み込みを自動( true )か、ボタンクリック( false )にする
-      padding: 20, // autoTriggerがtrueの場合、指定したコンテンツの下から何pxで読み込むか指定
-      contentSelector: '.jscroll' // 読み込む範囲を指定、指定がなければページごと丸っと読み込む
-    }
-    $('.jscroll').jscroll(jscrollOption);
-  </script>
   <?php
   function embedCommonJS()
   {
