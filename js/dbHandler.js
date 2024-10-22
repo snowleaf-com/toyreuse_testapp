@@ -28,13 +28,13 @@ export const initDB = () => {
   });
 };
 // 画像パスを保存する関数
-export const saveImagePath = (filePath) => {
+export const saveImagePath = (filePath, file) => {
   return new Promise((resolve, reject) => { // Promiseを返す
     initDB().then((db) => {
       const transaction = db.transaction(storeName, "readwrite");
       const store = transaction.objectStore(storeName);
 
-      const request = store.add({ filePath }); // 画像パスを追加
+      const request = store.add({ filePath, file }); // 画像パスを追加
 
       request.onsuccess = (event) => {
         const id = event.target.result; // 生成されたIDを取得

@@ -27,7 +27,7 @@ export const handleFiles = (files, previewContainer, errorList, enableImageSelec
 
     const reader = new FileReader();
     reader.onload = (e) => {
-      createImagePreview(e.target.result, previewContainer, enableImageSelection, disableImageSelection);
+      createImagePreview(e.target.result, previewContainer, enableImageSelection, disableImageSelection, file);
     };
     reader.readAsDataURL(file);
   });
@@ -43,7 +43,7 @@ const addError = (errorList, message) => {
   errorList.appendChild(errorItem);
 };
 
-export const createImagePreview = async (src, previewContainer, enableImageSelection, disableImageSelection) => {
+export const createImagePreview = async (src, previewContainer, enableImageSelection, disableImageSelection, file) => {
   const previewDiv = document.createElement("div");
   previewDiv.classList.add("preview-image");
 
@@ -53,7 +53,7 @@ export const createImagePreview = async (src, previewContainer, enableImageSelec
 
 
   // IndexedDBに画像パスを保存し、保存された画像のidを取得
-  const id = await saveImagePath(src); // ここでIDを取得
+  const id = await saveImagePath(src, file); // ここでIDを取得
 
 
   const removeButton = createRemoveButton(previewDiv, previewContainer, id, enableImageSelection);
