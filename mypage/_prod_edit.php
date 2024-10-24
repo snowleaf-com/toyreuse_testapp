@@ -247,7 +247,8 @@ if (!empty($_POST['submit'])) {
   ?>
   <script>
     // JavaScriptファイルに渡す
-    const pageFlag = <?php echo $page_flg; ?>;
+    const pageFlg = <?php echo $page_flg; ?>;
+    const editFlg = <?php echo $edit_flg; ?>;
   </script>
   <script type="module" src="../js/index.js"></script>
 </head>

@@ -5,7 +5,7 @@ import { initSubmitButtonEvent } from './submitHandler.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (pageFlag === 1) {
+  if (pageFlg === 1) {
     const imageInput = document.getElementById("imageInput");
     const dropArea = document.getElementById("dropArea");
     const previewContainer = document.getElementById("previewContainer");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initDropAreaEvents(dropArea, imageInput, previewContainer, errorList);
     initImageInputEvents(imageInput, previewContainer, errorList, dropArea);
-  } else if (pageFlag === 2) {
+  } else if (pageFlg === 2) {
     displayImages();
 
     // 送信ボタンのイベントを初期化
