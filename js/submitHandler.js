@@ -1,3 +1,4 @@
+// submitHandle.js
 import { clearAllImagePaths, getAllImages } from "./dbHandler.js";
 
 // IndexedDBのデータをPHPに送信する関数（モジュール内）
