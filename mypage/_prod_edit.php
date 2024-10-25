@@ -248,7 +248,8 @@ if (!empty($_POST['submit'])) {
   <script>
     // JavaScriptファイルに渡す
     const pageFlg = <?php echo $page_flg; ?>;
-    const editFlg = <?php echo $edit_flg; ?>;
+    const editFlg = <?php echo json_encode($edit_flg); ?>;
+    const productsData = <?php echo $edit_flg ? json_encode($productData) : '{}'; ?>;
   </script>
   <script type="module" src="../js/index.js"></script>
 </head>
