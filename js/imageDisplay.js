@@ -4,33 +4,38 @@ import { displaySavedImage, disableImageSelection, enableImageSelection, maxImag
 
 
 // IndexedDBから取得した画像を表示する関数
-export const loadExistingImages = async (previewContainer, errorList, dropArea, imageInput, initialImageCount = 0) => {
+export const displayInitialImages = async (previewContainer, errorList, dropArea, imageInput) => {
   // 編集フラグがtrueの場合、initialImageCountを使って既存画像数を初期化
-  let currentImageCount = initialImageCount;
+  const { pic1, pic2, pic3 } = productsData;
+  const existingImages = [pic1, pic2, pic3].filter(Boolean);
+  let currentImageCount = existingImages.length;
 
   // productsDataがある場合、まずはその画像をプレビューに表示
-  for (let i = 0; i < initialImageCount; i++) {
+  for (let i = 0; i < currentImageCount; i++) {
     const imgPath = productsData[`pic${i + 1}`];
     if (imgPath) {
       displaySavedImage(imgPath, previewContainer, `product-img-${i}`, 
         () => enableImageSelection(dropArea, imageInput),
         () => disableImageSelection(dropArea, imageInput),
-        false // 削除ボタンを無効にする
+        true // 削除ボタンを無効にする
       );
     }
   }
 
-  const images = await getAllImages();
-  images.slice(0, maxImages - initialImageCount).forEach((image) => {
-    displaySavedImage(image.filePath, previewContainer, image.id, 
-      () => enableImageSelection(dropArea, imageInput),
-      () => disableImageSelection(dropArea, imageInput)
-    );
-    currentImageCount++;
-  });
+  // 追加アップロードが可能な場合にのみ、IndexedDBから画像をロード
+  if (currentImageCount < maxImages) {
+    const images = await getAllImages();
+    images.slice(0, maxImages - currentImageCount).forEach((image) => {
+      displaySavedImage(image.filePath, previewContainer, image.id, 
+        () => enableImageSelection(dropArea, imageInput),
+        () => disableImageSelection(dropArea, imageInput)
+      );
+      currentImageCount++;
+    });
+  }
   
   // 画像の数でimageCountを初期化
-  setImageCount(images.length);
+  setImageCount(currentImageCount);
   // 画像が最大数に達している場合は画像選択を無効にする
   if (getImageCount() >= maxImages) {
     disableImageSelection(dropArea, imageInput);
