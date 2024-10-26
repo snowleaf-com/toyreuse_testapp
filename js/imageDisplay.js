@@ -51,20 +51,39 @@ export function displayImages() {
     if (imgPath) {
       imgElement.src = imgPath;
       imgElement.style.display = 'block'; // 画像を表示
+    } else {
+      imgElement.style.display = 'none'; // 画像がない場合は非表示
     }
   }
+
+  // productsDataから画像を取得
+  const { pic1, pic2, pic3 } = productsData;
+  const imagesToDisplay = [pic1, pic2, pic3]; // 最初に3つの画像を配列にまとめる
 
   // IndexedDBから全ての画像パスを取得して表示
   getAllFromIndexedDB()
     .then((images) => {
-      images.forEach((image, index) => {
-        displayImage(`image${index + 1}`, image.filePath);
+      // imagesのインデックスを追跡するための変数
+      let imageIndex = 0;
+
+      // imagesToDisplayの空いている部分にIndexedDBの画像を埋める
+      for (let i = 0; i < 3; i++) {
+        if (!imagesToDisplay[i] && imageIndex < images.length) {
+          imagesToDisplay[i] = images[imageIndex].filePath; // 空いている場所に画像を追加
+          imageIndex++; // インデックスを進める
+        }
+      }
+
+      // 最終的な画像リストを表示
+      imagesToDisplay.forEach((imgPath, index) => {
+        displayImage(`image${index + 1}`, imgPath);
       });
     })
     .catch((error) => {
       console.error('エラー:', error);
     });
 }
+
 
 // IndexedDBから全データを取得する関数
 function getAllFromIndexedDB() {
