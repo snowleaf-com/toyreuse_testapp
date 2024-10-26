@@ -316,7 +316,7 @@ if (!empty($_POST['submit'])) {
             <div class="cp_iptxt">
               <label class="ef">商品タイトル<span class="required">必須</span>
                 <br>
-                <input type="text" name="name" class="<?php if (!empty($err_msg['name'])) echo 'form_warning' ?>" value="<?php echo getFormData('name') ?>">
+                <input type="text" name="name" class="<?php if (!empty($err_msg['name'])) echo 'form_warning'; ?>" value="<?php echo getFormData('name'); ?>" <?php if ($edit_flg) echo 'readonly'; ?>>
                 <?php if (!empty($err_msg['name'])): ?>
                   <span class="err_warning"><?php getErrMsg('name') ?></span>
                 <?php endif; ?>
