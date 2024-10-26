@@ -105,7 +105,7 @@ export const enableImageSelection = (dropArea, imageInput) => {
   imageInput.disabled = false;
 };
 
-export const displaySavedImage = (src, previewContainer, id, enableImageSelection, disableImageSelection) => {
+export const displaySavedImage = (src, previewContainer, id, enableImageSelection, disableImageSelection, disableDelete = false) => {
   const previewDiv = document.createElement("div");
   previewDiv.classList.add("preview-image");
 
@@ -113,9 +113,11 @@ export const displaySavedImage = (src, previewContainer, id, enableImageSelectio
   imgElement.src = src;
   previewDiv.appendChild(imgElement);
 
-  // 削除ボタンを作成
-  const removeButton = createRemoveButton(previewDiv, previewContainer, id, enableImageSelection);
-  previewDiv.appendChild(removeButton);
+  // 削除ボタンの有無
+  if (!disableDelete) {
+    const removeButton = createRemoveButton(previewDiv, previewContainer, id, enableImageSelection);
+    previewDiv.appendChild(removeButton);
+  }
 
   previewContainer.appendChild(previewDiv);
   imageCount++;
