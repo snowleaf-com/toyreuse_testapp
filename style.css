@@ -840,6 +840,12 @@ width: 1000px;
   box-shadow: 1px 1px 2px 0 #707070 inset;
   border-radius: 10px;
 }
+.cp_iptxt input[readonly]{
+  background-color: #f0f0f0; /* 薄いグレー */
+  color: #666; /* グレーのテキスト */
+  border: 1px solid #ccc; /* 薄いグレーの枠線 */
+  cursor: not-allowed; /* カーソルを禁止アイコンに */
+}
 .cp_iptxt input[type=number] {
   width: 50%;
 }

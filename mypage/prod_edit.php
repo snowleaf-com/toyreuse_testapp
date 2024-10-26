@@ -1,4 +1,9 @@
 <?php
+// デバッグ用にエラー表示を有効にする
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 //---------------お決まり---------------------
 require '../function.php';
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
@@ -27,13 +32,6 @@ $token = $_SESSION['token'];
 
 //クリックジャッキング対策
 header('X-FRAME-OPTIONS: SAMEORIGIN');
-
-// ページ読み込み時にセッションの仮アップロードデータをリセット（GETリクエスト時）
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-  unset($_SESSION['pic1']);
-  unset($_SESSION['pic2']);
-  unset($_SESSION['pic3']);
-}
 
 //-------------GETがあるとき---------------
 if (!empty($_GET)) {
@@ -84,11 +82,6 @@ if (!empty($_POST['confirm'])) {
   $price = h($_POST['price']);
   $comment = h($_POST['comment']);
 
-  // 画像を仮アップロードし、パスをセッションに格納
-  $_SESSION['pic1'] = (!empty($_FILES['pic1']['name'])) ? uploadImgTemp($_FILES['pic1'], 'pic1') : (isset($productData['pic1']) ? $productData['pic1'] : '');
-  $_SESSION['pic2'] = (!empty($_FILES['pic2']['name'])) ? uploadImgTemp($_FILES['pic2'], 'pic2') : (isset($productData['pic2']) ? $productData['pic2'] : '');
-  $_SESSION['pic3'] = (!empty($_FILES['pic3']['name'])) ? uploadImgTemp($_FILES['pic3'], 'pic3') : (isset($productData['pic3']) ? $productData['pic3'] : '');
-
   // バリデーション
   if (empty($productData)) {
     // 新規登録時のバリデーション
@@ -127,161 +120,140 @@ if (!empty($_POST['confirm'])) {
 
 // 修正するボタン押下時
 if (!empty($_POST['back'])) {
-  // 仮アップロード画像の削除
-  $tempPics = ['pic1', 'pic2', 'pic3'];
-  foreach ($tempPics as $pic) {
-    if (!empty($_SESSION[$pic])) {
-      $tempFilePath = $_SESSION[$pic];
-      // ファイルが存在するか確認
-      if (file_exists($tempFilePath) && strpos($tempFilePath, 'tmp_uploads/') === 0) {
-        // ファイルの削除
-        if (!unlink($tempFilePath)) {
-          error_log("仮アップロードファイルの削除に失敗しました: " . $tempFilePath);
-          // 必要に応じてユーザーにエラーメッセージを表示
-          $access_err_msg[] = '仮アップロードファイルの削除に失敗しました。';
-        }
-      }
-      // セッションから削除
-      unset($_SESSION[$pic]);
-    }
-  }
   $page_flg = 1; // 編集ページに戻る
 }
 
 //送信ボタン押下時
 if (!empty($_POST['submit'])) {
-  // CSRFトークンの確認
-  if ($_POST['token'] !== $_SESSION['token']) {
-    echo "不正アクセスの可能性あり";
-    exit();
-  }
-  // トークンをクリア
-  unset($_SESSION['token']);
-
-  // 変数にユーザー情報を代入
-  $name = h($_POST['name']);
-  $category = h($_POST['category_id']);
-  $price = h($_POST['price']);
-  $comment = h($_POST['comment']);
-
-  // セッションから画像パスを取得
-  $pic1 = getImgForm('pic1');
-  $pic2 = getImgForm('pic2');
-  $pic3 = getImgForm('pic3');
-
-  // 本アップロード処理
-  function startsWith($str1, $str2)
-  {
-    if (empty($str1)) {
-      return false;
+  // エラー処理
+  try {
+    // CSRFトークンの確認
+    if (!isset($_POST['token']) || $_POST['token'] !== $_SESSION['token']) {
+      echo json_encode(['status' => 'error', 'message' => '不正アクセスの可能性あり']);
+      exit();
     }
-    $length = mb_strlen($str2);
-    return (mb_substr($str1, 0, $length) === $str2);
-  }
+    // トークンをクリア
+    unset($_SESSION['token']);
 
-  // pic1 の移動処理
-  if (!empty($pic1) && startsWith($pic1, 'tmp_uploads/')) {
-    $kari1 = mb_substr($pic1, strlen('tmp_uploads/'));
-    $kari2 = 'uploads/' . $kari1;
-    if (rename($pic1, $kari2)) {
-      $pic1 = $kari2;
-    } else {
-      error_log("ファイルの移動に失敗しました: " . $pic1);
-      $access_err_msg[] = '画像1のアップロードに失敗しました。';
-    }
-  } elseif (empty($pic1)) {
-    $pic1 = null;
-  }
+    // データベースに入れる処理
+    $name = h($_POST['name']);
+    $category = h($_POST['category_id']);
+    $price = h($_POST['price']);
+    $comment = h($_POST['comment']);
 
-  // pic2 の移動処理
-  if (!empty($pic2) && startsWith($pic2, 'tmp_uploads/')) {
-    $kari1 = mb_substr($pic2, strlen('tmp_uploads/'));
-    $kari2 = 'uploads/' . $kari1;
-    if (rename($pic2, $kari2)) {
-      $pic2 = $kari2;
-    } else {
-      error_log("ファイルの移動に失敗しました: " . $pic2);
-      $access_err_msg[] = '画像2のアップロードに失敗しました。';
-    }
-  } elseif (empty($pic2)) {
-    $pic2 = null;
-  }
+    // データベースへの登録処理
+    if (empty($access_err_msg)) {
+      try {
+        // DBへ接続
+        $dbh = dbConnect();
+        // SQL文作成
+        if ($edit_flg) {
+          // データベースにすでにある画像パスの確認
+          $pic1 = !empty($_FILES['pic1']) ? uploadImg($_FILES['pic1'], 'pic1') : $productData['pic1'];
+          $pic2 = !empty($_FILES['pic2']) ? uploadImg($_FILES['pic2'], 'pic2') : $productData['pic2'];
+          $pic3 = !empty($_FILES['pic3']) ? uploadImg($_FILES['pic3'], 'pic3') : $productData['pic3'];
 
-  // pic3 の移動処理
-  if (!empty($pic3) && startsWith($pic3, 'tmp_uploads/')) {
-    $kari1 = mb_substr($pic3, strlen('tmp_uploads/'));
-    $kari2 = 'uploads/' . $kari1;
-    if (rename($pic3, $kari2)) {
-      $pic3 = $kari2;
-    } else {
-      error_log("ファイルの移動に失敗しました: " . $pic3);
-      $access_err_msg[] = '画像3のアップロードに失敗しました。';
-    }
-  } elseif (empty($pic3)) {
-    $pic3 = null;
-  }
+          debug('DB更新です。');
+          $sql = 'UPDATE products SET name = :name, category_id = :category, price = :price, comment = :comment, pic1 = :pic1, pic2 = :pic2, pic3 = :pic3 WHERE user_id = :u_id AND id = :p_id';
+          $data = array(
+            ':name' => $name,
+            ':category' => $category,
+            ':price' => $price,
+            ':comment' => $comment,
+            ':pic1' => $pic1,
+            ':pic2' => $pic2,
+            ':pic3' => $pic3,
+            ':u_id' => $_SESSION['user_id'],
+            ':p_id' => $p_id
+          );
+        } else {
+          // 画像のアップロード処理
+          $pic1 = !empty($_FILES['pic1']) ? uploadImg($_FILES['pic1'], 'pic1') : '';
+          $pic2 = !empty($_FILES['pic2']) ? uploadImg($_FILES['pic2'], 'pic2') : '';
+          $pic3 = !empty($_FILES['pic3']) ? uploadImg($_FILES['pic3'], 'pic3') : '';
 
-  // データベースへの登録処理
-  if (empty($access_err_msg)) {
-    try {
-      // DBへ接続
-      $dbh = dbConnect();
-      // SQL文作成
-      if ($edit_flg) {
-        debug('DB更新です。');
-        $sql = 'UPDATE products SET name = :name, category_id = :category, price = :price, comment = :comment, pic1 = :pic1, pic2 = :pic2, pic3 = :pic3 WHERE user_id = :u_id AND id = :p_id';
-        $data = array(
-          ':name' => $name,
-          ':category' => $category,
-          ':price' => $price,
-          ':comment' => $comment,
-          ':pic1' => $pic1,
-          ':pic2' => $pic2,
-          ':pic3' => $pic3,
-          ':u_id' => $_SESSION['user_id'],
-          ':p_id' => $p_id
-        );
-      } else {
-        debug('DB新規登録です。');
-        $sql = 'INSERT INTO 
+          debug('DB新規登録です。');
+          $sql = 'INSERT INTO 
                 products (name, category_id, price, comment, pic1, pic2, pic3, user_id, create_date ) 
                 VALUES (:name, :category, :price, :comment, :pic1, :pic2, :pic3, :u_id, :date)';
-        $data = array(
-          ':name' => $name,
-          ':category' => $category,
-          ':price' => $price,
-          ':comment' => $comment,
-          ':pic1' => $pic1,
-          ':pic2' => $pic2,
-          ':pic3' => $pic3,
-          ':u_id' => $_SESSION['user_id'],
-          ':date' => date('Y-m-d H:i:s')
-        );
-      }
-      debug('SQL：' . $sql);
-      debug('流し込みデータ：' . print_r($data, true));
-      // クエリ実行
-      $stmt = queryPost($dbh, $sql, $data);
+          $data = array(
+            ':name' => $name,
+            ':category' => $category,
+            ':price' => $price,
+            ':comment' => $comment,
+            ':pic1' => $pic1,
+            ':pic2' => $pic2,
+            ':pic3' => $pic3,
+            ':u_id' => $_SESSION['user_id'],
+            ':date' => date('Y-m-d H:i:s')
+          );
+        }
+        debug('SQL：' . $sql);
+        debug('流し込みデータ：' . print_r($data, true));
+        // クエリ実行
+        $stmt = queryPost($dbh, $sql, $data);
 
-      // クエリ成功の場合
-      if ($stmt) {
-        // 仮アップロードのセッションデータをクリア
-        unset($_SESSION['pic1']);
-        unset($_SESSION['pic2']);
-        unset($_SESSION['pic3']);
-        $page_flg = 3;
+        // クエリ成功の場合
+        if ($stmt) {
+          // 成功した場合の処理をここに記述
+          //成功ページへの値受け渡し処理
+          $_SESSION['edit_flg'] = $edit_flg;
+          if (!empty($p_id)) {
+            $_SESSION['products_id'] = $p_id;
+          }
+          echo json_encode([
+            'status' => 'success',
+            'redirect_url' => '/akachan/mypage/prod_success.php', // 遷移先のURL
+            'message' => 'データが正常に処理されました',
+          ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+        }
+      } catch (PDOException $e) {
+        error_log('エラー発生:' . $e->getMessage());
+        $access_err_msg[] = 'エラーが発生しました';
       }
-    } catch (PDOException $e) {
-      error_log('エラー発生:' . $e->getMessage());
-      $access_err_msg[] = 'エラーが発生しました';
     }
+    exit();
+  } catch (Exception $e) {
+    echo json_encode([
+      'status' => 'error',
+      'message' => $e->getMessage(),
+    ]);
+    exit(); // エラー時にスクリプトを終了
   }
 }
 ?>
 
-<?php require 'mypage_head.php' ?>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo $sideName ?>TOY REUSE - 赤ちゃん用品のリサイクル、コミュニティ -</title>
+  <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <?php
+  function embedCommonJS()
+  {
+    $baseUrl = $_ENV['BASE_URL'];
+    echo '<script type="module" src="' . $baseUrl . 'js/common.js"></script>';
+  }
+  embedCommonJS();
+  ?>
+  <script>
+    // JavaScriptファイルに渡す
+    const pageFlg = <?php echo $page_flg; ?>;
+    const productsData = <?php echo $edit_flg ? json_encode($productData) : '{}'; ?>;
+    const pId = "<?php echo $_GET['p_id'] ?? ''; ?>";
+  </script>
+  <script type="module" src="../js/index.js"></script>
+</head>
 
 <body>
+
   <?php require 'mypage_header.php' ?>
 
   <div class="index_breadcrumb_wrap" style="margin-bottom: 20px;"><!-- パンくず大枠 -->
@@ -342,7 +314,7 @@ if (!empty($_POST['submit'])) {
             <div class="cp_iptxt">
               <label class="ef">商品タイトル<span class="required">必須</span>
                 <br>
-                <input type="text" name="name" class="<?php if (!empty($err_msg['name'])) echo 'form_warning' ?>" value="<?php echo getFormData('name') ?>">
+                <input type="text" name="name" class="<?php if (!empty($err_msg['name'])) echo 'form_warning'; ?>" value="<?php echo getFormData('name'); ?>" <?php if ($edit_flg) echo 'readonly'; ?>>
                 <?php if (!empty($err_msg['name'])): ?>
                   <span class="err_warning"><?php getErrMsg('name') ?></span>
                 <?php endif; ?>
@@ -401,43 +373,25 @@ if (!empty($_POST['submit'])) {
 
 
             <div class="imgDrop">
-
-              <div class="imgDrop-container">
-                <label class="area-drop">
-                  <input type="file" name="pic1" class="input-file">
-                  <img src="<?php echo isset($_SESSION['pic1']) ? h($_SESSION['pic1']) : ''; ?>" alt="" class="prev-img" style="display:<?php echo isset($_SESSION['pic1']) ? 'block' : 'none'; ?>;">
-                  <button type="button" class="delete-btn delete-btn-hidden" id="deleteBtn1">削除</button>
-                  <p>画像を選択してください</p>
-                </label>
+              <div>商品画像（3枚まで / 1枚あたり最大5MB）</div>
+              <div class="image-upload-container">
+                <div id="previewContainer"></div>
+                <div id="errorList" class="error-list"></div>
+                <input type="file" id="imageInput" accept="image/*" multiple>
+                <div id="dropArea" class="drop-area">
+                  <label for="imageInput" class="select-button">
+                    画像を選択する
+                  </label>
+                  <p>またはドラッグ&ドロップ</p>
+                </div>
               </div>
-
-
-              <div class="imgDrop-container">
-                <label class="area-drop">
-                  <input type="file" name="pic2" class="input-file">
-                  <img src="<?php echo isset($_SESSION['pic2']) ? h($_SESSION['pic2']) : ''; ?>" alt="" class="prev-img" style="display:<?php echo isset($_SESSION['pic2']) ? 'block' : 'none'; ?>;">
-                  <button type="button" class="delete-btn delete-btn-hidden" id="deleteBtn2">削除</button>
-                  <p>画像を選択してください</p>
-                </label>
-              </div>
-              <div class="imgDrop-container">
-                <label class="area-drop">
-                  <input type="file" name="pic3" class="input-file">
-                  <img src="<?php echo isset($_SESSION['pic3']) ? h($_SESSION['pic3']) : ''; ?>" alt="" class="prev-img" style="display:<?php echo isset($_SESSION['pic3']) ? 'block' : 'none'; ?>;">
-                  <button type="button" class="delete-btn delete-btn-hidden" id="deleteBtn3">削除</button>
-                  <p>画像を選択してください</p>
-                </label>
-              </div>
-
-
-
 
             </div>
 
 
             <p class="center pt-30">
               <input type="hidden" name="token" value="<?php echo h($token); ?>">
-              <button class="btn" type="submit" name="confirm" value="確認する" style="background-color:pink">確認する</button>
+              <button class="btn" name="confirm" id="confirmButton" value="確認する" style="background-color:pink">確認する</button>
             </p>
           </form>
 
@@ -449,7 +403,7 @@ if (!empty($_POST['submit'])) {
 
           <h3 class="center"><span class="err_warning"><?php getErrMsg('common'); ?></span></h3>
           <p class="center">以下でよろしいですか？</p>
-          <form method="post" action="">
+          <form method="post" action="" id="productsForm">
 
             <div class="cp_iptxt">
               <label class="ef">商品タイトル
@@ -490,50 +444,36 @@ if (!empty($_POST['submit'])) {
             <div class="cp_iptxt">
               <label class="ef">画像１
                 <p class="confirm_p">
-                  <?php if (!empty($_SESSION['pic1'])): ?>
-                    <img src="<?php echo h($_SESSION['pic1']); ?>" width="200px" height="200px" style="object-fit:contain;<?php if (empty($_SESSION['pic1'])) echo ' display:none;' ?>">
+                  <img id="image1" src="" width="200px" height="200px" style="object-fit:contain; display:none;">
                 </p>
-              <?php endif; ?>
-              <input type="hidden" name="pic1" value="<?php echo h($_SESSION['pic1']) ?>">
               </label>
             </div>
+
             <div class="cp_iptxt">
               <label class="ef">画像２
                 <p class="confirm_p">
-                  <?php if (!empty($_SESSION['pic2'])): ?>
-                    <img src="<?php echo h($_SESSION['pic2']); ?>" width="200px" height="200px" style="object-fit:contain;<?php if (empty($_SESSION['pic2'])) echo ' display:none;' ?>">
+                  <img id="image2" src="" width="200px" height="200px" style="object-fit:contain; display:none;">
                 </p>
-              <?php endif; ?>
-              <input type="hidden" name="pic2" value="<?php echo h($_SESSION['pic2']) ?>">
               </label>
             </div>
+
             <div class="cp_iptxt">
               <label class="ef">画像３
                 <p class="confirm_p">
-                  <?php if (!empty($_SESSION['pic3'])): ?>
-                    <img src="<?php echo h($_SESSION['pic3']); ?>" width="200px" height="200px" style="object-fit:contain;<?php if (empty($_SESSION['pic3'])) echo ' display:none;' ?>">
+                  <img id="image3" src="" width="200px" height="200px" style="object-fit:contain; display:none;">
                 </p>
-              <?php endif; ?>
-              <input type="hidden" name="pic3" value="<?php echo h($_SESSION['pic3']) ?>">
               </label>
             </div>
 
-
-            <input type="hidden" name="token" value="<?php echo h($token); ?>">
+            <!-- トークンやボタンなど他のフォームフィールド -->
             <p class="center pt-30">
-              <button class="btn_s" type="submit" name="back" style="background-color:azure" value="修正する">修正する</button>
-              <button class="btn_s" type="submit" name="submit" value="登録する">登録する</button>
+              <input type="hidden" name="token" value="<?php echo h($token); ?>">
+              <button class="btn_s" id="editButton" type="submit" name="back" style="background-color:azure" value="修正する">修正する</button>
+              <button class="btn_s" id="submitButton" type="submit" name="submit" value="登録する">登録する</button>
             </p>
 
           </form>
 
-
-          <!-- ページフラグが３のとき -->
-        <?php elseif ($page_flg === 3): ?>
-
-          <p class="center pt-20 pb-20">登録が完了しました。<br>
-            <a href="mypage.php">マイページへ戻る</a>
-          </p>
         <?php endif; ?>
 
       <?php else: ?>
@@ -552,81 +492,6 @@ if (!empty($_POST['submit'])) {
       ©︎ TOY REUSE
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-
-
-      // 画像ライブプレビュー
-      var $dropArea = $('.area-drop');
-      var $fileInput = $('.input-file');
-
-      // ドラッグオーバー時の処理
-      $dropArea.on('dragover', function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        $(this).css('border', '3px #ccc dashed');
-      });
-
-      // ドラッグアウト時の処理
-      $dropArea.on('dragleave', function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        $(this).css('border', 'none');
-      });
-
-      // ファイルが選択された時の処理
-      $fileInput.on('change', function(e) {
-        $dropArea.css('border', 'none');
-        $(this).siblings('p').text('');
-        var file = this.files[0];
-        var $img = $(this).siblings('.prev-img');
-        var fileReader = new FileReader();
-
-        // 読み込みが完了した際のイベントハンドラ
-        fileReader.onload = function(event) {
-          // 読み込んだデータをimgに設定
-          $img.attr('src', event.target.result).show();
-          $(this).siblings('.delete-btn').show(); // 削除ボタンを表示
-        }.bind(this); // thisをファイル入力にバインド
-
-        // 画像読み込み
-        fileReader.readAsDataURL(file);
-      });
-
-      // 削除ボタンのクリックイベント
-      $('.delete-btn').on('click', function() {
-        var $dropArea = $(this).closest('.area-drop');
-        var $fileInput = $dropArea.find('.input-file');
-        var $img = $dropArea.find('.prev-img');
-        var $deleteBtn = $(this);
-
-        // プレビューとファイル入力をリセット
-        $img.attr('src', '').hide();
-        $fileInput.val('');
-        $deleteBtn.addClass('delete-btn-hidden').hide();
-        $dropArea.find('p').text('画像を選択してください'); // ラベルを元に戻す
-
-        // サーバー側に削除リクエストを送信
-        var picName = $fileInput.attr('name');
-        $.ajax({
-          url: 'delete_image.php',
-          type: 'POST',
-          data: {
-            pic: picName
-          },
-          success: function(response) {
-            if (response === 'success') {
-              console.log(picName + ' が削除されました。');
-            } else {
-              alert('画像の削除に失敗しました。');
-            }
-          }
-        });
-      });
-    });
-  </script>
-
 </body>
 
 </html>

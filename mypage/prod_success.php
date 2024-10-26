@@ -18,6 +18,7 @@ $access_err_msg = array();
 $edit_flg = '';
 $p_id = '';
 $sideName = '';
+$productData = '';
 $userData = getUser($_SESSION['user_id']); // ユーザー情報取得
 
 if (!isset($_SESSION['edit_flg']) || $_SESSION['edit_flg'] === '') {
@@ -34,6 +35,8 @@ if (!isset($_SESSION['edit_flg']) || $_SESSION['edit_flg'] === '') {
     $p_id = $_SESSION['products_id'];
     unset($_SESSION['products_id']);
   }
+
+  $productData = getProduct($p_id, $userData['id']);
 
   // edit_flg に基づく処理
   if ($edit_flg === true) {
@@ -100,7 +103,7 @@ if (!isset($_SESSION['edit_flg']) || $_SESSION['edit_flg'] === '') {
       <?php
       if (empty($access_err_msg)) {
         if ($edit_flg) {
-          echo '商品名: ' . h(getFormData('name')) . ' の編集';
+          echo '商品名: ' . $productData['name'] . ' の編集';
         } else {
           echo '商品出品';
         }
