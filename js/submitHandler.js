@@ -6,8 +6,10 @@ export async function submitFormWithImagePaths(formData) {
   try {
     console.log("Sending data to PHP...");
 
+    const url = pId ? `/akachan/mypage/_prod_edit.php?p_id=${pId}` : '/akachan/mypage/_prod_edit.php';
+
     // データをPOSTリクエストで送信し、結果が返ってくるまで待機
-    const response = await fetch('/akachan/mypage/_prod_edit.php', {
+    const response = await fetch(url, {
       method: 'POST',
       body: formData
     });
