@@ -141,17 +141,10 @@ if (!empty($_POST['submit'])) {
     $price = h($_POST['price']);
     $comment = h($_POST['comment']);
 
-    // 画像のアップロード処理
-    $pic1 = $pic2 = $pic3 = '';
-    if (!empty($_FILES['pic1'])) {
-      $pic1 = uploadImg($_FILES['pic1'], 'pic1');
-    }
-    if (!empty($_FILES['pic2'])) {
-      $pic2 = uploadImg($_FILES['pic2'], 'pic2');
-    }
-    if (!empty($_FILES['pic3'])) {
-      $pic3 = uploadImg($_FILES['pic3'], 'pic3');
-    }
+    // データベースにすでにある画像パスの確認
+    $pic1 = !empty($_FILES['pic1']) ? uploadImg($_FILES['pic1'], 'pic1') : $productData['pic1'];
+    $pic2 = !empty($_FILES['pic2']) ? uploadImg($_FILES['pic2'], 'pic2') : $productData['pic2'];
+    $pic3 = !empty($_FILES['pic3']) ? uploadImg($_FILES['pic3'], 'pic3') : $productData['pic3'];
 
     // データベースへの登録処理
     if (empty($access_err_msg)) {
