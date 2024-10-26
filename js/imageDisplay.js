@@ -4,11 +4,29 @@ import { displaySavedImage, disableImageSelection, enableImageSelection, maxImag
 
 
 // IndexedDBから取得した画像を表示する関数
-export const loadExistingImages = async (previewContainer, errorList, dropArea, imageInput) => {
-  const images = await getAllImages(); // IndexedDBから画像パスを取得
-  images.forEach((image) => {
-    // 既存の画像を表示
-    displaySavedImage(image.filePath, previewContainer, image.id, () => enableImageSelection(dropArea, imageInput), () => disableImageSelection(dropArea, imageInput));
+export const loadExistingImages = async (previewContainer, errorList, dropArea, imageInput, initialImageCount = 0) => {
+  // 編集フラグがtrueの場合、initialImageCountを使って既存画像数を初期化
+  let currentImageCount = initialImageCount;
+
+  // productsDataがある場合、まずはその画像をプレビューに表示
+  for (let i = 0; i < initialImageCount; i++) {
+    const imgPath = productsData[`pic${i + 1}`];
+    if (imgPath) {
+      displaySavedImage(imgPath, previewContainer, `product-img-${i}`, 
+        () => enableImageSelection(dropArea, imageInput),
+        () => disableImageSelection(dropArea, imageInput),
+        false // 削除ボタンを無効にする
+      );
+    }
+  }
+
+  const images = await getAllImages();
+  images.slice(0, maxImages - initialImageCount).forEach((image) => {
+    displaySavedImage(image.filePath, previewContainer, image.id, 
+      () => enableImageSelection(dropArea, imageInput),
+      () => disableImageSelection(dropArea, imageInput)
+    );
+    currentImageCount++;
   });
   
   // 画像の数でimageCountを初期化
