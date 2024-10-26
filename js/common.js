@@ -23,8 +23,8 @@ const checkIfDataExists = async () => {
 document.addEventListener("DOMContentLoaded", async () => {
   const currentPage = window.location.pathname;
 
-  // /akachan/mypage/_prod_edit.php以外のページにアクセスした場合
-  if (currentPage !== '/akachan/mypage/_prod_edit.php') {
+  // /akachan/mypage/prod_edit.php以外のページにアクセスした場合
+  if (currentPage !== '/akachan/mypage/prod_edit.php') {
     const dataExists = await checkIfDataExists(); // データの存在をチェック
 
     if (dataExists) {
