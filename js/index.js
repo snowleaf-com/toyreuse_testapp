@@ -2,8 +2,11 @@
 import { initDropAreaEvents, initImageInputEvents } from './uiHandler.js';
 import { displayImages, displayInitialImages } from './imageDisplay.js';
 import { initSubmitButtonEvent } from './submitHandler.js';
+import { managePId } from './pIdManager.js';
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  await managePId();// GETパラメータ変更によるindexedDBデータ削除処理
+
   const imageInput = document.getElementById("imageInput");
   const dropArea = document.getElementById("dropArea");
   const previewContainer = document.getElementById("previewContainer");
