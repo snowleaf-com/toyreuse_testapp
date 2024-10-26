@@ -141,11 +141,6 @@ if (!empty($_POST['submit'])) {
     $price = h($_POST['price']);
     $comment = h($_POST['comment']);
 
-    // データベースにすでにある画像パスの確認
-    $pic1 = !empty($_FILES['pic1']) ? uploadImg($_FILES['pic1'], 'pic1') : $productData['pic1'];
-    $pic2 = !empty($_FILES['pic2']) ? uploadImg($_FILES['pic2'], 'pic2') : $productData['pic2'];
-    $pic3 = !empty($_FILES['pic3']) ? uploadImg($_FILES['pic3'], 'pic3') : $productData['pic3'];
-
     // データベースへの登録処理
     if (empty($access_err_msg)) {
       try {
@@ -153,6 +148,11 @@ if (!empty($_POST['submit'])) {
         $dbh = dbConnect();
         // SQL文作成
         if ($edit_flg) {
+          // データベースにすでにある画像パスの確認
+          $pic1 = !empty($_FILES['pic1']) ? uploadImg($_FILES['pic1'], 'pic1') : $productData['pic1'];
+          $pic2 = !empty($_FILES['pic2']) ? uploadImg($_FILES['pic2'], 'pic2') : $productData['pic2'];
+          $pic3 = !empty($_FILES['pic3']) ? uploadImg($_FILES['pic3'], 'pic3') : $productData['pic3'];
+
           debug('DB更新です。');
           $sql = 'UPDATE products SET name = :name, category_id = :category, price = :price, comment = :comment, pic1 = :pic1, pic2 = :pic2, pic3 = :pic3 WHERE user_id = :u_id AND id = :p_id';
           $data = array(
@@ -167,6 +167,11 @@ if (!empty($_POST['submit'])) {
             ':p_id' => $p_id
           );
         } else {
+          // 画像のアップロード処理
+          $pic1 = !empty($_FILES['pic1']) ? uploadImg($_FILES['pic1'], 'pic1') : '';
+          $pic2 = !empty($_FILES['pic2']) ? uploadImg($_FILES['pic2'], 'pic2') : '';
+          $pic3 = !empty($_FILES['pic3']) ? uploadImg($_FILES['pic3'], 'pic3') : '';
+
           debug('DB新規登録です。');
           $sql = 'INSERT INTO 
                 products (name, category_id, price, comment, pic1, pic2, pic3, user_id, create_date ) 
