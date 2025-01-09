@@ -11,7 +11,8 @@ require 'auth.php';
 $userData = getUser($_SESSION['user_id']);
 
 //自分の出品商品情報を取得
-$myProduct = getMyProduct($userData['id']);
+$
+ = getMyProduct($userData['id']);
 
 //自分の購入商品情報を取得
 $myBoughtProd = myBoughtProd($userData['id']);

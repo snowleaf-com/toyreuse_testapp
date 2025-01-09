@@ -170,8 +170,8 @@ if (!empty($_POST['pass_old']) || !empty($_POST['pass_new'])) {
 1時間以内に下記のURLにアクセスしてください。
 {$url}
 EOM;
-
-      sendMail($from, $to, $subject, $comment);
+      $send2 = new MailSend();
+      $send2->sendMail($subject, $comment, $to);
 
       $sql = 'UPDATE members SET password=:password WHERE id=:id AND delete_flg = 0';
       $data = array(
