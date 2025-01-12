@@ -2,11 +2,13 @@
 import { handleFiles, enableImageSelection, disableImageSelection } from './imageHandler.js';
 
 export const initDropAreaEvents = (dropArea, imageInput, previewContainer, errorList) => {
+  //デフォルト動作を無効化
   const preventDefaults = (e) => {
     e.preventDefault();
     e.stopPropagation();
   };
-
+  
+  //デフォルト動作を無効化
   ["dragenter", "dragover", "dragleave", "drop"].forEach((eventName) => {
     dropArea.addEventListener(eventName, preventDefaults, false);
   });

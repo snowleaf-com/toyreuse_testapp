@@ -101,6 +101,7 @@ function queryPost($dbh, $sql, $data)
   return $stmt;
 }
 //------------データベースクエリ用関数（数字）　テスト中
+// 使っていない
 function queryPostNum($dbh, $sql, $data)
 {
   $stmt = $dbh->prepare($sql);
@@ -405,6 +406,7 @@ function uploadImg($file, $key)
 }
 
 // 画像処理（仮）
+// 使っていない
 function uploadImgTemp($file, $key)
 {
   debug('画像アップロードテンポラ処理開始');
@@ -460,6 +462,7 @@ function uploadImgTemp($file, $key)
 
 
 //メール送信関数
+// 使っていない。MailSendクラスを使用する
 function sendMail($from, $to, $subject, $comment)
 {
   if (!empty($to) && !empty($subject) && !empty($comment)) {
@@ -563,6 +566,7 @@ function getSessionFlash($key)
 
 
 //商品画像呼び出し処理
+// 使っていない
 function getImgForm($key)
 {
   global $productData;
@@ -671,6 +675,7 @@ function getCommunityFormData($key, $flg = false)
 
 
 // 自分の管理コミュニティ
+//TODO: クエリの最適化（JOINを使う）　取得して整形する
 function getCommunityMyPage($u_id)
 {
   try {
@@ -709,6 +714,7 @@ function getCommunityMyPage($u_id)
 // 参加コミュニティと結合→
 // 参加コミュニティの名前と、参加者と
 
+//TODO: クエリの最適化（JOINを使う）
 function getJoinedMyCommunity($u_id)
 {
   try {
@@ -810,7 +816,7 @@ function isLogin()
 }
 
 
-
+// ユーザーのお気に入り登録されている商品情報を取得
 function myFavoriteProd($u_id)
 {
   try {

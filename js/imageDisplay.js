@@ -5,10 +5,10 @@ import { displaySavedImage, disableImageSelection, enableImageSelection, maxImag
 
 // IndexedDBから取得した画像を表示する関数
 export const displayInitialImages = async (previewContainer, errorList, dropArea, imageInput) => {
-  // 編集フラグがtrueの場合、initialImageCountを使って既存画像数を初期化
+  //edit_flgがtrueの時のみproductsDataが渡ってくる。
   const { pic1, pic2, pic3 } = productsData;
-  const existingImages = [pic1, pic2, pic3].filter(Boolean);
-  let currentImageCount = existingImages.length;
+  const existingImages = [pic1, pic2, pic3].filter(Boolean);//空でない画像パス（null や undefined を除外）だけを取得
+  let currentImageCount = existingImages.length;//既存画像数を初期化
 
   // productsDataがある場合、まずはその画像をプレビューに表示
   for (let i = 0; i < currentImageCount; i++) {
